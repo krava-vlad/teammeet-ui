@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body style="background-color: black; overflow-y: auto;">
+    <div id="splashContainer">
+        <div id="splashHeader">
+            <h2>Gigtrack for Musicians presents...</h2>
+            <button id="accessStudioBtn">Click to<br> access Studio</button>
+            <button id="accessTheatreBtn">Click to<br> access Theatre</button>
+            <button id="accessKidsBtn">Click to access<br> Activity for kids</button>
+        </div>
+        <div id="splashIntro">
+            <div id="splashLogoContainer">
+                <div id="splashLogo">Stage<span>track</span> Studio</div>
+            </div>
+            <div id="remoteBandContainer">
+                <div id="remoteBandBtn">Remote Band Collaboration</div>
+            </div>
+            <div id="recordAnywhereContainer">
+                <div id="recordAnywhereBtn">Record from<br> anywhere, view and<br> edit online.</div>
+            </div>
+        </div>
+        <div id="splashQuote">
+            <p style="font-weight: bold;">"Live play is the best, in between use Stagetrack Studio to make your live play even better" - Creator, Richard Kagan</p>
+        </div>
+        <div id="splashCardContainer">
+            <div class="splashCards" id="splashCard1">
+                <img src="splashStudio.png">
+                <div class="splashCardTitle">Your Music Studio</div> 
+                <p>A platform built for musicians where they can come together, and work on their craft in tandem.</p>
+                <p>The collaborative potential is astounding with the ability to track audio AND video simultaneously, edit your tracks in real time, apply fun and funky filters to yourselves and your videos.</p>
+                <p>Spend quality time with like-minded people to create something magical!</p>
+            </div>
+            <div class="splashCards" id="splashCard2">
+                <img src="splashTheatre.png">
+                <div class="splashCardTitle">Play Practice Made Easy</div>
+                <p id="demo"></p>
+            </div>
+            <div class="splashCards" id="splashCard3">
+                <img src="splashKids.jpg">
+                <div class="splashCardTitle">Music Activities for Kids</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<!--new 12/9-->
+
+<script>
+var splashChangingText = false;
+
+var mySplashTimerVar = setInterval(mySplashTimer, 4000);
+
+function mySplashTimer() {
+  if (splashChangingText == false) {
+    document.getElementById("recordAnywhereBtn").innerHTML = "Hi!!! Welcome :)";
+    splashChangingText = true;
+  }
+  else {
+    document.getElementById("recordAnywhereBtn").innerHTML = "Record from<br> anywhere, view and<br> edit online.";
+    splashChangingText = false;
+  }
+}
+</script>
+
+<!--end new 12/9-->
+
+</body>
+</html>

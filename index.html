@@ -1,0 +1,3031 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Risque&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Vid Website</title>
+</head>
+<body onload="sliderController()"> 
+    <div id="container">
+    <header>
+<!--new 02/12-->        
+        <div id="logoDiv">
+            <img src="logo.png" alt="Stagetrack Studio" id="logo">
+        </div>
+<!--end new 02/12-->        
+        <div id="session">
+            <input type="image" src="sessionLeave.png" class="session" alt="Leave Session">
+            <input type="image" src="sessionPause.png" class="session" alt="Pause Session">
+            <input type="image" src="sessionStart.png" class="session" alt="Start Session">
+        </div>
+<!-- new 02/12 commented out       
+        <div id="headerBandContainer">
+            <div id="bandName">The Purple Potatoes</div>
+            <div id="headerBandSongName">[Song name]</div>
+        </div>
+-->        
+    </header>
+     <div id="contentContainer">  
+
+        <aside id="nav_side">
+            <div id="mySidepanel" class="sidepanel">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<!--new 01/17-->                
+                <a href="#" onclick="openLilOnes()">For Kids</a>
+<!--end new 01/17-->             
+                <a href="#" onclick="openLeftMenuOptions(3)">Admin</a>
+                <a href="#" onclick="openLeftMenuOptions(2)">Notes</a>
+                <a href="#" onclick="openLeftMenuOptions(1)">Resource Library</a>
+                <a href="#" onclick="openLeftMenuOptions(0)">Song Library</a>
+                <a href="#" onclick="openLeftMenuOptions(4)">Band Profile</a>
+                <a href="epicRiffContest.html">Contest</a>
+                <a href="bandLogin.html">Band</a>
+                <a href="actorLogin.html">Actor</a>
+                <a href="register.html">Register</a>
+                <a href="vid website.7z" download>Files</a>
+                <a href="splashPage.html">Splash</a>
+                <a href="vendorShowcase.html">Vendor</a>
+                <a href="store.html">Store</a>
+            </div>
+              
+              <button class="openbtn" id="openbtn" onclick="openNav()">&#9776;</button>
+    
+        </aside>
+
+                <!--Song Library-->
+            <div class="leftSideMenuChoiceSelected">
+            <a href="javascript:void(0)" class="closeLeftMenuOption" onclick="closeLeftMenuOptions()">&times;</a>
+                <div class="lSMCSTitleContainer">
+                    <div class="lSMCSTitle">Song Library</div>
+                    <div class="arrow-down"></div>
+                </div>
+           
+                    <div class="lSMCSNameContainer">
+                        <div class="lSMCSLastName">[Last Name],</div>
+                        <div class="lSMCSFirstName">[First Name]</div>
+                    </div>
+                    <div class="lSMCSTime">
+                        <p>200828-3:41PM</p>
+                        <div class="editSelectBtns">
+                            <input type="image" src="leftSideMenuArrow.png">
+                        </div>
+                    </div>
+                    <div class="lSMCSSongName">
+                        <p>You Wreck Me</p> 
+                        <div class="editSelectBtns"> 
+                            <input type="image" src="leftSideMenuArrow.png">
+                        </div>
+                    </div>
+           
+                    <div class="lSMCSNameContainer">
+                        <div class="lSMCSBandName">[Band Name]</div>
+                    </div>
+                    <div class="lSMCSTime">
+                        <p>200828-4:31PM</p>
+                        <div class="editSelectBtns"> 
+                            <input type="image" src="leftSideMenuArrow.png">
+                        </div>
+                    </div>
+                    <div class="lSMCSSongName">
+                        <p>Won't Back Down</p> 
+                        <div class="editSelectBtns"> 
+                            <input type="image" src="leftSideMenuArrow.png">
+                        </div>
+                    </div>
+           
+                    <div class="lSMCSNameContainer">
+                        <div class="lSMCSBandName">[Band Name], </div>
+                    </div>
+                    <div class="lSMCSTime">
+                        <p>200828-3:41PM</p>
+                        <div class="editSelectBtns"> 
+                            <input type="image" src="leftSideMenuArrow.png">
+                        </div>
+                    </div>
+                    <div class="lSMCSSongName">
+                        <p>Wildflowers</p> 
+                        <div class="editSelectBtns"> 
+                            <input type="image" src="leftSideMenuArrow.png">
+                        </div>
+                    </div>
+                
+            </div>
+        
+                <!--Resource Library-->
+                <div class="leftSideMenuChoiceSelected">
+                <a href="javascript:void(0)" class="closeLeftMenuOption" onclick="closeLeftMenuOptions()">&times;</a>
+                    <div class="lSMCSTitleContainer">
+                        <div class="lSMCSTitle">Resource Library</div>
+                        <div class="arrow-down"></div>
+                    </div>
+           
+                        <div class="lSMCSNameContainer">
+                            <div class="lSMCSLastName">[Last Name], </div>
+                            <div class="lSMCSFirstName">[First Name]</div>
+                        </div>
+                        <div class="lSMCSTime">
+                            <p>Chord Sheet</p>
+                            <div class="editSelectBtns"> 
+                            <input type="image" src="leftSideMenuArrow.png">
+                            </div>
+                        </div>
+                        <div class="lSMCSSongName">
+                            <p>You Wreck Me-Lyrics</p> 
+                            <div class="editSelectBtns"> 
+                                <input type="image" src="leftSideMenuArrow.png">
+                            </div>
+                        </div>
+           
+                        <div class="lSMCSNameContainer">
+                            <div class="lSMCSBandName">[Band Name]</div>
+                        </div>
+                        <div class="lSMCSTime">
+                            <p>Exercise Sheet</p>
+                            <div class="editSelectBtns"> 
+                            <input type="image" src="leftSideMenuArrow.png">
+                            </div>
+                        </div>
+                        <div class="lSMCSSongName">
+                            <p>Receipt-Guitar</p> 
+                            <div class="editSelectBtns"> 
+                                <input type="image" src="leftSideMenuArrow.png">
+                            </div>
+                        </div>
+                                            
+                </div>
+
+                <!--Notes-->
+                <div class="leftSideMenuChoiceSelected">
+                <a href="javascript:void(0)" class="closeLeftMenuOption" onclick="closeLeftMenuOptions()">&times;</a>
+                <button type="button" data-toggle="collapse" data-target="#leftSideAddNoteContent" aria-expanded="false" aria-controls="collapseExample" id="leftSideAddNoteBtn">Add Note</button>
+                    <div class="lSMCSTitleContainer">
+                        <div class="lSMCSTitle">Notes</div>
+                        <div class="arrow-down"></div>
+                    </div>
+                    <div class="collapse" id="leftSideAddNoteContent">
+                        <div>
+                            <h5>Enter Topic</h5>
+                            <textarea name="" id="leftSideAddNoteTextarea" cols="30" rows="4" placeholder="Note..."></textarea>
+                            <button type="submit" id="leftSideAddNoteSubmitBtn">Submit</button>
+                        </div>
+                      </div>
+                        <div class="lSMCSNameContainer">
+                            <div class="lSMCSLastName">08/28/20 - [Topic]</div>
+                        </div>
+                        <div class="lSMCSNotes">
+                            <p>Note note note note note</p>
+                        </div>
+                        <div class="lSMCSNameContainer">
+                            <div class="lSMCSLastName">08/29/20 - [Topic]</div>
+                        </div>
+                        <div class="lSMCSNotes">
+                            <p>Note note note note note note</p>
+                        </div>
+                        
+                </div>
+
+                <!--Admin-->
+                <div class="leftSideMenuChoiceSelected">
+                    <a href="javascript:void(0)" class="closeLeftMenuOption" onclick="closeLeftMenuOptions()">&times;</a>
+                    <div class="lSMCSTitleContainer">
+                        <div class="lSMCSTitle">Admin</div>
+                        <div class="arrow-down"></div>
+                    </div>
+                    <div class="adminHideOptionsTitle">
+                        <p class="yellowColorText">Hide</p>
+                    </div>
+                    <div class="adminHideActualOptions">
+                        <div>
+                            <input type="checkbox" name="" id="">
+                            <label for="">Band Name</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id="">
+                            <label for="">Chat box</label>
+                        </div>                        
+                        <div>
+                            <input type="checkbox" name="" id="">
+                            <label for="">Scrolling Banner</label>
+                        </div>
+                    </div>
+                    <div class="adminSetupOptions">
+                        <a href="#" class="yellowColorText">Set-up Band/Musician Profile</a>
+                        <a href="#" class="yellowColorText">Set-up Recurring Practice</a>
+                    </div>    
+                </div>
+
+            <div class="leftSideMenuChoiceSelected">
+                <a href="javascript:void(0)" class="closeLeftMenuOption" onclick="closeLeftMenuOptions()">&times;</a>
+                    <div id="profileTitleContainer">
+                        <h6>Account Owner</h6>
+                        <div id="actualProfileOwner">Richard Kagan</div>
+                     </div>
+                    <div id="bandsILeadContainer">
+                          Bands I Lead
+                            <button type="button" data-toggle="collapse" data-target="#bandsILead" aria-expanded="false" aria-controls="bandsILead" class="bandsILeadBtn">
+                              +
+                            </button>
+                          
+                          
+                    </div>
+                    <div class="collapse" id="bandsILead">
+                            <div id="profileAddBandContainer">
+                                <div id="profileAddBandTitle">Add Band</div>
+                                <form id="profileAddBandForm">
+                                    <input type="text" name="" id="" placeholder="Name">
+                                    <input type="text" name="" id="" placeholder="City">
+                                    <input type="text" name="" id="" placeholder="State">
+                                    <input type="text" name="" id="" placeholder="ZIP">
+                                    <input type="text" name="" id="" placeholder="Band Website">
+                                    <input type="text" name="" id="" placeholder="Date Established">
+                                </form>
+                                <div id="profileAddBandToDirectory">
+                                    <input type="checkbox" name="" id="">
+                                    <p>Add band to directory</p>
+                                </div>
+                                <button id="addBandSaveBtn">Save</button>
+                            </div>
+                            
+                            <div id="bandsILeadMembersList">
+                                <h5>Band Members</h5>
+                                <select name="" id="" size="4">
+                                    <option value="">Jack</option>
+                                    <option value="">John</option>
+                                    <option value="">Jim</option>
+                                    <option value="">Jill</option>
+                                    <option value="">Jill's sister</option>
+                                    <option value="">Jill's cousin</option>
+                                  </select>
+                                  <div id="addDeleteBandMember">
+                                    <input type="text" placeholder="Add name">
+                                    <button id="addBandMemberSave">Add</button>
+                                    <button id="bandsILeadListDelete">Delete</button>
+                                </div>
+                            </div>
+                        
+                      </div>
+
+                        <div id="bandsILeadList">
+                        
+                            <button type="button" data-toggle="collapse" data-target="#bandsILead01" aria-expanded="false" aria-controls="bandsILead01" class="bandsILeadBtn">
+                              + Black Label Society
+                            </button>
+                        
+                          <div class="collapse" id="bandsILead01">
+                            <div>
+                                <table class="bandsILeadTable">
+                                    <tr>
+                                        <td></td>
+                                        <td><button>Invite All</button></td>
+                                        <td><button>Edit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Johnston</td>
+                                        <td><button>Invite</button></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jill</td>
+                                        <td><button>Invite</button></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jack</td>
+                                        <td><button>Invite</button></td>
+                                        <td></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div id="profileAddBandContainer">
+                                <div id="profileAddBandTitle">Edit Band</div>
+                                <form id="profileAddBandForm">
+                                    <input type="text" name="" id="" placeholder="Name">
+                                    <input type="text" name="" id="" placeholder="City">
+                                    <input type="text" name="" id="" placeholder="State">
+                                    <input type="text" name="" id="" placeholder="ZIP">
+                                    <input type="text" name="" id="" placeholder="Band Website">
+                                    <input type="text" name="" id="" placeholder="Date Established">
+                                </form>
+                                <div id="profileAddBandToDirectory">
+                                    <input type="checkbox" name="" id="">
+                                    <p>Add band to directory</p>
+                                </div>
+                                <button id="addBandSaveBtn">Save</button>
+                            </div>
+                            
+                            <div id="bandsILeadMembersList">
+                                <h5>Band Members</h5>
+                                <select name="" id="" size="4">
+                                    <option value="">Jack</option>
+                                    <option value="">John</option>
+                                    <option value="">Jim</option>
+                                    <option value="">Jill</option>
+                                    <option value="">Jill's sister</option>
+                                    <option value="">Jill's cousin</option>
+                                  </select>
+                                  <div id="addDeleteBandMember">
+                                    <input type="text" placeholder="Add name">
+                                    <button id="addBandMemberSave">Add</button>
+                                    <button id="bandsILeadListDelete">Delete</button>
+                                </div>
+                            </div>
+                          </div>
+                          <button type="button" data-toggle="collapse" data-target="#bandsILead02" aria-expanded="false" aria-controls="bandsILead02" class="bandsILeadBtn">
+                            + Guns'n'Roses
+                          </button>
+                      
+                        <div class="collapse" id="bandsILead02">
+                          <div>
+                              <table class="bandsILeadTable">
+                                  <tr>
+                                      <td></td>
+                                      <td><button>Invite All</button></td>
+                                      <td><button>Edit</button></td>
+                                  </tr>
+                                  <tr>
+                                      <td>Slash</td>
+                                      <td><button>Invite</button></td>
+                                      <td></td>
+                                  </tr>
+                                  <tr>
+                                      <td>Axl</td>
+                                      <td><button>Invite</button></td>
+                                      <td></td>
+                                  </tr>
+                                  <tr>
+                                      <td>Others</td>
+                                      <td><button>Invite</button></td>
+                                      <td></td>
+                                  </tr>
+                              </table>
+                          </div>
+                          <div id="profileAddBandContainer">
+                            <div id="profileAddBandTitle">Edit Band</div>
+                            <form id="profileAddBandForm">
+                                <input type="text" name="" id="" placeholder="Name">
+                                <input type="text" name="" id="" placeholder="City">
+                                <input type="text" name="" id="" placeholder="State">
+                                <input type="text" name="" id="" placeholder="ZIP">
+                                <input type="text" name="" id="" placeholder="Band Website">
+                                <input type="text" name="" id="" placeholder="Date Established">
+                            </form>
+                            <div id="profileAddBandToDirectory">
+                                <input type="checkbox" name="" id="">
+                                <p>Add band to directory</p>
+                            </div>
+                            <button id="addBandSaveBtn">Save</button>
+                        </div>
+                        
+                        <div id="bandsILeadMembersList">
+                            <h5>Band Members</h5>
+                            <select name="" id="" size="4">
+                                <option value="">Jack</option>
+                                <option value="">John</option>
+                                <option value="">Jim</option>
+                                <option value="">Jill</option>
+                                <option value="">Jill's sister</option>
+                                <option value="">Jill's cousin</option>
+                              </select>
+                              <div id="addDeleteBandMember">
+                                <input type="text" placeholder="Add name">
+                                <button id="addBandMemberSave">Add</button>
+                                <button id="bandsILeadListDelete">Delete</button>
+                            </div>
+                        </div>
+                        </div>
+                        <button type="button" data-toggle="collapse" data-target="#bandsILead03" aria-expanded="false" aria-controls="bandsILead03" class="bandsILeadBtn">
+                            + Metallica
+                          </button>
+                      
+                        <div class="collapse" id="bandsILead03">
+                          <div>
+                              <table class="bandsILeadTable">
+                                  <tr>
+                                      <td></td>
+                                      <td><button>Invite All</button></td>
+                                      <td><button>Edit</button></td>
+                                  </tr>
+                                  <tr>
+                                      <td>Jack</td>
+                                      <td><button>Invite</button></td>
+                                      <td></td>
+                                  </tr>
+                                  <tr>
+                                      <td>Daniel</td>
+                                      <td><button>Invite</button></td>
+                                      <td></td>
+                                  </tr>
+                                  <tr>
+                                      <td>Jessica</td>
+                                      <td><button>Invite</button></td>
+                                      <td></td>
+                                  </tr>
+                              </table>
+                          </div>
+                          <div id="profileAddBandContainer">
+                            <div id="profileAddBandTitle">Edit Band</div>
+                            <form id="profileAddBandForm">
+                                <input type="text" name="" id="" placeholder="Name">
+                                <input type="text" name="" id="" placeholder="City">
+                                <input type="text" name="" id="" placeholder="State">
+                                <input type="text" name="" id="" placeholder="ZIP">
+                                <input type="text" name="" id="" placeholder="Band Website">
+                                <input type="text" name="" id="" placeholder="Date Established">
+                            </form>
+                            <div id="profileAddBandToDirectory">
+                                <input type="checkbox" name="" id="">
+                                <p>Add band to directory</p>
+                            </div>
+                            <button id="addBandSaveBtn">Save</button>
+                        </div>
+                        
+                        <div id="bandsILeadMembersList">
+                            <h5>Band Members</h5>
+                            <select name="" id="" size="4">
+                                <option value="">Jack</option>
+                                <option value="">John</option>
+                                <option value="">Jim</option>
+                                <option value="">Jill</option>
+                                <option value="">Jill's sister</option>
+                                <option value="">Jill's cousin</option>
+                              </select>
+                              <div id="addDeleteBandMember">
+                                <input type="text" placeholder="Add name">
+                                <button id="addBandMemberSave">Add</button>
+                                <button id="bandsILeadListDelete">Delete</button>
+                            </div>
+                        </div>
+                        </div>
+                        
+                    </div>
+                    <div id="bandsIBelongToTitle">Bands I Belong To</div>
+
+                    <div id="bandsIBelongToList">
+                        
+                        <button type="button" data-toggle="collapse" data-target="#bandsIBelongTo01" aria-expanded="false" aria-controls="bandsIBelongTo01" class="bandsILeadBtn">
+                          + Simpsons
+                        </button>
+                    
+                      <div class="collapse" id="bandsIBelongTo01">
+                        <div>
+                            <table class="bandsILeadTable">
+                                <tr>
+                                    <td></td>
+                                    <td><button>Invite All</button></td>
+                                    <td><button>Leave</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Bart</td>
+                                    <td><button>Invite</button></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Lisa</td>
+                                    <td><button>Invite</button></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Homer</td>
+                                    <td><button>Invite</button></td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </div>
+                      </div>
+                      <button type="button" data-toggle="collapse" data-target="#bandsIBelongTo02" aria-expanded="false" aria-controls="bandsIBelongTo02" class="bandsILeadBtn">
+                        + Family Guy
+                      </button>
+                  
+                    <div class="collapse" id="bandsIBelongTo02">
+                      <div>
+                          <table class="bandsILeadTable">
+                              <tr>
+                                  <td></td>
+                                  <td><button>Invite All</button></td>
+                                  <td><button>Leave</button></td>
+                              </tr>
+                              <tr>
+                                  <td>Brian</td>
+                                  <td><button>Invite</button></td>
+                                  <td></td>
+                              </tr>
+                              <tr>
+                                  <td>Stewie</td>
+                                  <td><button>Invite</button></td>
+                                  <td></td>
+                              </tr>
+                              <tr>
+                                  <td>Louis</td>
+                                  <td><button>Invite</button></td>
+                                  <td></td>
+                              </tr>
+                          </table>
+                      </div>
+                    </div>
+                    <button type="button" data-toggle="collapse" data-target="#bandsIBelongTo03" aria-expanded="false" aria-controls="bandsIBelongTo03" class="bandsILeadBtn">
+                        + South Park
+                      </button>
+                  
+                    <div class="collapse" id="bandsIBelongTo03">
+                      <div>
+                          <table class="bandsILeadTable">
+                              <tr>
+                                  <td></td>
+                                  <td><button>Invite All</button></td>
+                                  <td><button>Leave</button></td>
+                              </tr>
+                              <tr>
+                                  <td>Cartman</td>
+                                  <td><button>Invite</button></td>
+                                  <td></td>
+                              </tr>
+                              <tr>
+                                  <td>Kenny</td>
+                                  <td><button>Invite</button></td>
+                                  <td></td>
+                              </tr>
+                              <tr>
+                                  <td>Stan</td>
+                                  <td><button>Invite</button></td>
+                                  <td></td>
+                              </tr>
+                          </table>
+                      </div>
+                    </div>
+
+                </div>
+                <div id="bandsSendInviteTitle">Send Invite</div>
+                <div id="bandsSendInviteContent">
+                    <input type="text" placeholder="Send email or text">
+                    <button type="submit">Send</button>
+                </div>
+         </div>
+                
+            
+     <main>
+        <div class="mainTop">
+<!--new 02/11-->  
+            <div id="newCaptureBorderColorsContainer">
+                <button id="newCaptureGreen" onclick="newCaptureBorder('Green')"></button>
+                <button id="newCaptureAqua" onclick="newCaptureBorder('Aqua')"></button>
+                <button id="newCaptureRed" onclick="newCaptureBorder('Red')"></button>
+                <button id="newCaptureOrange" onclick="newCaptureBorder('Orange')"></button>
+            </div>
+            <!--Capture 1-->
+            <div id="newMainContentAreaX1">
+                <div class="newMainContentHeaderBg">
+                    <img src="image1190.png" class="newMainContentHeaderLogo">
+                    <h6 class="newMainContentHeaderPresents">Presents</h6>
+                    <h5 class="newMainContentHeaderPerformance">Performance</h5>
+                </div>
+                <div class="newMainContentMain">
+                    <div class="newMainContentLeft">
+                        <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture1_1">
+                    </div>
+                    <div class="newMainContentRight">
+                        <div class="newMainContentRightInner">
+                            <div class="newMainContentRightInnerMenu">
+                                <div class="newMainContentRightInnerMenuContainer">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                            <div class="newMainContentRightInnerTextarea">
+                                <textarea class="newMainContentTextarea" placeholder="..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Capture 2-->
+            <div id="newMainContentAreaX2">
+                <div class="newMainContentHeaderBg">
+                    <img src="image1190.png" class="newMainContentHeaderLogo">
+                    <h6 class="newMainContentHeaderPresents">Presents</h6>
+                    <h5 class="newMainContentHeaderPerformance">Performance</h5>
+                </div>
+                <div class="newMainContentMain">
+                    <div class="newMainContentLeftX2">
+                        <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture2_1">
+                    </div>
+                    <div class="newMainContentMiddleX2">
+                        <div class="newMainContentRightInner">
+                            <div class="newMainContentRightInnerMenu">
+                                <div class="newMainContentRightInnerMenuContainer">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                            <div class="newMainContentRightInnerTextarea">
+                                <textarea class="newMainContentTextarea" placeholder="..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="newMainContentRightX2">
+                        <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture2_2">
+                    </div>
+                </div>
+            </div>
+                       <!--Capture 3-->
+                       <div id="newMainContentAreaX3">
+                        <div class="newMainContentHeaderBg">
+                            <img src="image1190.png" class="newMainContentHeaderLogo">
+                            <h6 class="newMainContentHeaderPresents">Presents</h6>
+                            <h5 class="newMainContentHeaderPerformance">Performance</h5>
+                        </div>
+                        <div class="newMainContentMain">
+                            <div class="newMainContentLeftX3">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture3_1">
+                            </div>
+                            <div class="newMainContentMiddleX3">
+                                <div class="newMainContentRightInner">
+                                    <div class="newMainContentRightInnerMenu">
+                                        <div class="newMainContentRightInnerMenuContainer">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                    </div>
+                                    <div class="newMainContentRightInnerTextarea">
+                                        <textarea class="newMainContentTextarea" placeholder="..."></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="newMainContentRightX3">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture3_2">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture3_3">
+                            </div>
+                        </div>
+                    </div>
+                    <!--Capture 4-->
+                    <div id="newMainContentAreaX4">
+                        <div class="newMainContentHeaderBg">
+                            <img src="image1190.png" class="newMainContentHeaderLogo">
+                            <h6 class="newMainContentHeaderPresents">Presents</h6>
+                            <h5 class="newMainContentHeaderPerformance">Performance</h5>
+                        </div>
+                        <div class="newMainContentMain">
+                            <div class="newMainContentLeftX4">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture4_1">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture4_2">
+                            </div>
+                            <div class="newMainContentMiddleX4">
+                                <div class="newMainContentRightInner">
+                                    <div class="newMainContentRightInnerMenu">
+                                        <div class="newMainContentRightInnerMenuContainer">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                    </div>
+                                    <div class="newMainContentRightInnerTextarea">
+                                        <textarea class="newMainContentTextarea" placeholder="..."></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="newMainContentRightX4">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture4_3">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture4_4">
+                            </div>
+                        </div>
+                    </div>
+                    <!--Capture 5-->
+                    <div id="newMainContentAreaX5">
+                        <div class="newMainContentHeaderBg">
+                            <img src="image1190.png" class="newMainContentHeaderLogo">
+                            <h6 class="newMainContentHeaderPresents">Presents</h6>
+                            <h5 class="newMainContentHeaderPerformance">Performance</h5>
+                        </div>
+                        <div class="newMainContentMain">
+                            <div class="newMainContentLeftX5">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture5_1">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture5_2">
+                            </div>
+                            <div class="newMainContentMiddleX5">
+                                <div class="newMainContentRightInner">
+                                    <div class="newMainContentRightInnerMenu">
+                                        <div class="newMainContentRightInnerMenuContainer">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                    </div>
+                                    <div class="newMainContentRightInnerTextarea">
+                                        <textarea class="newMainContentTextarea" placeholder="..."></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="newMainContentRightX5">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture5_3">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture5_4">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture5_5">
+                                <div class="changeNewBorderColor vidCapture5_6"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Capture 6-->
+                    <div id="newMainContentAreaX6">
+                        <div class="newMainContentHeaderBg">
+                            <img src="image1190.png" class="newMainContentHeaderLogo">
+                            <h6 class="newMainContentHeaderPresents">Presents</h6>
+                            <h5 class="newMainContentHeaderPerformance">Performance</h5>
+                        </div>
+                        <div class="newMainContentMain">
+                            <div class="newMainContentLeftX6">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture6_1">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture6_2">
+                            </div>
+                            <div class="newMainContentMiddleX6">
+                                <div class="newMainContentRightInner">
+                                    <div class="newMainContentRightInnerMenu">
+                                        <div class="newMainContentRightInnerMenuContainer">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                    </div>
+                                    <div class="newMainContentRightInnerTextarea">
+                                        <textarea class="newMainContentTextarea" placeholder="..."></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="newMainContentRightX6">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture6_3">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture6_4">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture6_5">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture6_6">
+                            </div>
+                        </div>
+                    </div>
+                    <!--Capture 7-->
+                    <div id="newMainContentAreaX7">
+                        <div class="newMainContentHeaderBg">
+                            <img src="image1190.png" class="newMainContentHeaderLogo">
+                            <h6 class="newMainContentHeaderPresents">Presents</h6>
+                            <h5 class="newMainContentHeaderPerformance">Performance</h5>
+                        </div>
+                        <div class="newMainContentMain">
+                            <div class="newMainContentLeftX7">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture7_1">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture7_2">
+                            </div>
+                            <div class="newMainContentMiddleX7">
+                                <div class="newMainContentRightInner">
+                                    <div class="newMainContentRightInnerMenu">
+                                        <div class="newMainContentRightInnerMenuContainer">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                    </div>
+                                    <div class="newMainContentRightInnerTextarea">
+                                        <textarea class="newMainContentTextarea" placeholder="..."></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="newMainContentRightX7">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture7_3">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture7_4">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture7_5">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture7_6">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture7_7">
+                                <div class="changeNewBorderColor vidCapture7_8"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Capture 8-->
+                    <div id="newMainContentAreaX8">
+                        <div class="newMainContentHeaderBg">
+                            <img src="image1190.png" class="newMainContentHeaderLogo">
+                            <h6 class="newMainContentHeaderPresents">Presents</h6>
+                            <h5 class="newMainContentHeaderPerformance">Performance</h5>
+                        </div>
+                        <div class="newMainContentMain">
+                            <div class="newMainContentLeftX8">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture8_1">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture8_2">
+                            </div>
+                            <div class="newMainContentMiddleX8">
+                                <div class="newMainContentRightInner">
+                                    <div class="newMainContentRightInnerMenu">
+                                        <div class="newMainContentRightInnerMenuContainer">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                    </div>
+                                    <div class="newMainContentRightInnerTextarea">
+                                        <textarea class="newMainContentTextarea" placeholder="..."></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="newMainContentRightX8">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture8_3">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture8_4">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture8_5">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture8_6">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture8_7">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture8_8">
+                            </div>
+                        </div>
+                    </div>
+                    <!--Capture 9-->
+                    <div id="newMainContentAreaX9">
+                        <div class="newMainContentHeaderBg">
+                            <img src="image1190.png" class="newMainContentHeaderLogo">
+                            <h6 class="newMainContentHeaderPresents">Presents</h6>
+                            <h5 class="newMainContentHeaderPerformance">Performance</h5>
+                        </div>
+                        <div class="newMainContentMain">
+                            <div class="newMainContentLeftX9">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture9_1">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture9_2">
+                            </div>
+                            <div class="newMainContentMiddleX9">
+                                <div class="newMainContentRightInner">
+                                    <div class="newMainContentRightInnerMenu">
+                                        <div class="newMainContentRightInnerMenuContainer">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                    </div>
+                                    <div class="newMainContentRightInnerTextarea">
+                                        <textarea class="newMainContentTextarea" placeholder="..."></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="newMainContentRightX9">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture9_3">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture9_4">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture9_5">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture9_6">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture9_7">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture9_8">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture9_9">
+                                <div class="changeNewBorderColor vidCapture9_10"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Capture 10-->
+                    <div id="newMainContentAreaX10">
+                        <div class="newMainContentHeaderBg">
+                            <img src="image1190.png" class="newMainContentHeaderLogo">
+                            <h6 class="newMainContentHeaderPresents">Presents</h6>
+                            <h5 class="newMainContentHeaderPerformance">Performance</h5>
+                        </div>
+                        <div class="newMainContentMain">
+                            <div class="newMainContentLeftX10">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture10_1">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture10_2">
+                            </div>
+                            <div class="newMainContentMiddleX10">
+                                <div class="newMainContentRightInner">
+                                    <div class="newMainContentRightInnerMenu">
+                                        <div class="newMainContentRightInnerMenuContainer">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                    </div>
+                                    <div class="newMainContentRightInnerTextarea">
+                                        <textarea class="newMainContentTextarea" placeholder="..."></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="newMainContentRightX10">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture10_3">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture10_4">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture10_5">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture10_6">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture10_7">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture10_8">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture10_9">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture10_10">
+                            </div>
+                        </div>
+                    </div>
+                    <!--Capture 11-->
+                    <div id="newMainContentAreaX11">
+                        <div class="x11Left">
+                            <div class="newMainContentHeaderBgX11">
+                                <img src="image1190.png" class="newMainContentHeaderLogo">
+                                <h6 class="newMainContentHeaderPresents">Presents</h6>
+                                <h5 class="newMainContentHeaderPerformance">Performance</h5>
+                            </div>
+                            <div class="newMainContentMain">
+                                <div class="newMainContentLeftX11">
+                                    <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture11_1">
+                                    <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture11_2">
+                                </div>
+                                <div class="newMainContentMiddleX11">
+                                    <div class="newMainContentRightInner">
+                                        <div class="newMainContentRightInnerMenu">
+                                            <div class="newMainContentRightInnerMenuContainer">
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
+                                            </div>
+                                        </div>
+                                        <div class="newMainContentRightInnerTextarea">
+                                            <textarea class="newMainContentTextarea" placeholder="..."></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="x11Right">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture11_12"><!--hidden/ for layout-->
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture11_11">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture11_3">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture11_4">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture11_5">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture11_6">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture11_7">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture11_8">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture11_9">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture11_10">
+                        </div>
+                    </div>
+                    <!--Capture 12-->
+                    <div id="newMainContentAreaX12">
+                        <div class="x11Left">
+                            <div class="newMainContentHeaderBgX12">
+                                <img src="image1190.png" class="newMainContentHeaderLogo">
+                                <h6 class="newMainContentHeaderPresents">Presents</h6>
+                                <h5 class="newMainContentHeaderPerformance">Performance</h5>
+                            </div>
+                            <div class="newMainContentMain">
+                                <div class="newMainContentLeftX11">
+                                    <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture12_1">
+                                    <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture12_2">
+                                </div>
+                                <div class="newMainContentMiddleX11">
+                                    <div class="newMainContentRightInner">
+                                        <div class="newMainContentRightInnerMenu">
+                                            <div class="newMainContentRightInnerMenuContainer">
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
+                                            </div>
+                                        </div>
+                                        <div class="newMainContentRightInnerTextarea">
+                                            <textarea class="newMainContentTextarea" placeholder="..."></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="x11Right">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture12_12">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture12_11">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture12_3">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture12_4">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture12_5">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture12_6">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture12_7">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture12_8">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture12_9">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture12_10">
+                        </div>
+                    </div>
+                    <!--Capture 13-->
+                    <div id="newMainContentAreaX13">
+                        <div class="x11Left">
+                            <div class="newMainContentHeaderBgX12">
+                                <img src="image1190.png" class="newMainContentHeaderLogo">
+                                <h6 class="newMainContentHeaderPresents">Presents</h6>
+                                <h5 class="newMainContentHeaderPerformance">Performance</h5>
+                            </div>
+                            <div class="newMainContentMain">
+                                <div class="newMainContentLeftX11">
+                                    <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture13_1">
+                                    <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture13_2">
+                                </div>
+                                <div class="x13Middle">
+                                    <div class="newMainContentMiddleX13">
+                                        <div class="newMainContentRightInner">
+                                            <div class="newMainContentRightInnerMenu">
+                                                <div class="newMainContentRightInnerMenuContainer">
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                </div>
+                                            </div>
+                                            <div class="newMainContentRightInnerTextarea">
+                                                <textarea class="newMainContentTextarea" placeholder="..."></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="x13BottomVids">
+                                        <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture13_13">                                
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="x11Right">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture13_12">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture13_11">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture13_3">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture13_4">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture13_5">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture13_6">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture13_7">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture13_8">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture13_9">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture13_10">
+                        </div>
+                    </div>
+                    <!--Capture 14-->
+                    <div id="newMainContentAreaX14">
+                        <div class="x11Left">
+                            <div class="newMainContentHeaderBgX12">
+                                <img src="image1190.png" class="newMainContentHeaderLogo">
+                                <h6 class="newMainContentHeaderPresents">Presents</h6>
+                                <h5 class="newMainContentHeaderPerformance">Performance</h5>
+                            </div>
+                            <div class="newMainContentMain">
+                                <div class="newMainContentLeftX11">
+                                    <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture14_1">
+                                    <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture14_2">
+                                </div>
+                                <div class="x13Middle">
+                                    <div class="newMainContentMiddleX13">
+                                        <div class="newMainContentRightInner">
+                                            <div class="newMainContentRightInnerMenu">
+                                                <div class="newMainContentRightInnerMenuContainer">
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                </div>
+                                            </div>
+                                            <div class="newMainContentRightInnerTextarea">
+                                                <textarea class="newMainContentTextarea" placeholder="..."></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="x13BottomVids">
+                                        <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture14_14">
+                                        <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture14_13">                                
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="x11Right">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture14_12">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture14_11">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture14_3">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture14_4">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture14_5">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture14_6">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture14_7">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture14_8">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture14_9">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture14_10">
+                        </div>
+                    </div>
+                    <!--Capture 15-->
+                    <div id="newMainContentAreaX15">
+                        <div class="x11Left">
+                            <div class="newMainContentHeaderBgX12">
+                                <img src="image1190.png" class="newMainContentHeaderLogo">
+                                <h6 class="newMainContentHeaderPresents">Presents</h6>
+                                <h5 class="newMainContentHeaderPerformance">Performance</h5>
+                            </div>
+                            <div class="newMainContentMain">
+                                <div class="newMainContentLeftX11">
+                                    <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture15_1">
+                                    <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture15_2">
+                                </div>
+                                <div class="x13Middle">
+                                    <div class="newMainContentMiddleX13">
+                                        <div class="newMainContentRightInner">
+                                            <div class="newMainContentRightInnerMenu">
+                                                <div class="newMainContentRightInnerMenuContainer">
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                </div>
+                                            </div>
+                                            <div class="newMainContentRightInnerTextarea">
+                                                <textarea class="newMainContentTextarea" placeholder="..."></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="x13BottomVids">
+                                        <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture15_15">
+                                        <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture15_14">
+                                        <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture15_13">                                
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="x11Right">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture15_12">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture15_11">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture15_3">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture15_4">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture15_5">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture15_6">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture15_7">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture15_8">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture15_9">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture15_10">
+                        </div>
+                    </div>
+                    <!--Capture 16-->
+                    <div id="newMainContentAreaX16">
+                        <div class="x11Left">
+                            <div class="newMainContentHeaderBgX12">
+                                <img src="image1190.png" class="newMainContentHeaderLogo">
+                                <h6 class="newMainContentHeaderPresents">Presents</h6>
+                                <h5 class="newMainContentHeaderPerformance">Performance</h5>
+                            </div>
+                            <div class="newMainContentMain">
+                                <div class="newMainContentLeftX11">
+                                    <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture16_1">
+                                    <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture16_2">
+                                </div>
+                                <div class="x13Middle">
+                                    <div class="newMainContentMiddleX13">
+                                        <div class="newMainContentRightInner">
+                                            <div class="newMainContentRightInnerMenu">
+                                                <div class="newMainContentRightInnerMenuContainer">
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                </div>
+                                            </div>
+                                            <div class="newMainContentRightInnerTextarea">
+                                                <textarea class="newMainContentTextarea" placeholder="..."></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="x13BottomVids">
+                                        <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture16_16">
+                                        <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture16_15">
+                                        <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture16_14">
+                                        <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture16_13">                                
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="x11Right">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture16_12">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture16_11">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture16_3">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture16_4">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture16_5">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture16_6">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture16_7">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture16_8">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture16_9">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture16_10">
+                        </div>
+                    </div>            
+                    <!--Capture 17-->
+                    <div id="newMainContentAreaX17">
+                        <div class="x11Left">
+                            <div class="newMainContentHeaderBgX12">
+                                <img src="image1190.png" class="newMainContentHeaderLogo">
+                                <h6 class="newMainContentHeaderPresents">Presents</h6>
+                                <h5 class="newMainContentHeaderPerformance">Performance</h5>
+                            </div>
+                            <div class="newMainContentMain">
+                                <div class="newMainContentLeftX11">
+                                    <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture17_1">
+                                    <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture17_2">
+                                </div>
+                                <div class="x13Middle">
+                                    <div class="newMainContentMiddleX13">
+                                        <div class="newMainContentRightInner">
+                                            <div class="newMainContentRightInnerMenu">
+                                                <div class="newMainContentRightInnerMenuContainer">
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                </div>
+                                            </div>
+                                            <div class="newMainContentRightInnerTextarea">
+                                                <textarea class="newMainContentTextarea" placeholder="..."></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="x13BottomVidsAlt">
+                                        <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture17_17">
+                                        <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture17_16">
+                                        <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture17_15">
+                                        <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture17_14">
+                                        <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture17_13">                                
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="x11Right">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture17_12">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture17_11">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture17_3">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture17_4">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture17_5">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture17_6">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture17_7">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture17_8">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture17_9">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture17_10">
+                        </div>
+                    </div>
+                    <!--Capture 18-->
+                    <div id="newMainContentAreaX18">
+                        <div class="x11Left18">
+                            <div class="newMainContentLeftX18">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture18_1">
+                            </div>
+                            <div class="x18BottomVidsAlt">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture18_2">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture18_18">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture18_12">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture18_11">
+                            </div>
+                        </div>
+                        <div class="x11Right18">
+                            <div class="x18Upper">
+                                <div class="newMainContentHeaderBgX18">
+                                    <img src="image1190.png" class="newMainContentHeaderLogo">
+                                    <h6 class="newMainContentHeaderPresents">Presents</h6>
+                                    <h5 class="newMainContentHeaderPerformance">Performance</h5>
+                                </div>
+                            </div>
+                            <div class="x18Lower">
+                                <div class="x18Middle">
+                                    <div class="newMainContentMiddleX13">
+                                        <div class="newMainContentRightInner">
+                                            <div class="newMainContentRightInnerMenu">
+                                                <div class="newMainContentRightInnerMenuContainer">
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                </div>
+                                            </div>
+                                            <div class="newMainContentRightInnerTextarea">
+                                                <textarea class="newMainContentTextarea" placeholder="..."></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="x13BottomVidsAlt">
+                                        <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture18_17">
+                                        <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture18_16">
+                                        <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture18_15">
+                                        <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture18_14">
+                                        <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture18_13">                                
+                                    </div>
+                                </div>
+                                <div class="x18Right">
+                                    <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture18_3">
+                                    <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture18_4">
+                                    <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture18_5">
+                                    <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture18_6">
+                                    <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture18_7">
+                                    <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture18_8">
+                                    <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture18_9">
+                                    <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture18_10">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Capture 19-->
+                    <div id="newMainContentAreaX19">
+                        <div class="x11Left18">
+                            <div class="newMainContentLeftX18">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture19_1">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture19_2">
+                            </div>
+                            <div class="x18BottomVidsAlt">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture19_19">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture19_18">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture19_12">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture19_11">
+                            </div>
+                        </div>
+                        <div class="x11Right18">
+                            <div class="x18Upper">
+                                <div class="newMainContentHeaderBgX18">
+                                    <img src="image1190.png" class="newMainContentHeaderLogo">
+                                    <h6 class="newMainContentHeaderPresents">Presents</h6>
+                                    <h5 class="newMainContentHeaderPerformance">Performance</h5>
+                                </div>
+                            </div>
+                            <div class="x18Lower">
+                                <div class="x18Middle">
+                                    <div class="newMainContentMiddleX13">
+                                        <div class="newMainContentRightInner">
+                                            <div class="newMainContentRightInnerMenu">
+                                                <div class="newMainContentRightInnerMenuContainer">
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                </div>
+                                            </div>
+                                            <div class="newMainContentRightInnerTextarea">
+                                                <textarea class="newMainContentTextarea" placeholder="..."></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="x13BottomVidsAlt">
+                                        <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture19_17">
+                                        <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture19_16">
+                                        <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture19_15">
+                                        <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture19_14">
+                                        <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture19_13">                                
+                                    </div>
+                                </div>
+                                <div class="x18Right">
+                                    <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture19_3">
+                                    <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture19_4">
+                                    <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture19_5">
+                                    <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture19_6">
+                                    <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture19_7">
+                                    <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture19_8">
+                                    <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture19_9">
+                                    <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture19_10">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Capture 20-->
+                    <div id="newMainContentAreaX20">
+                        <div class="x11Left18">
+                            <div class="newMainContentLeftX20">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture20_1">
+        
+                            </div>
+                            <div class="x20BottomVidsAlt">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture20_2">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture20_20">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture20_19">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture20_18">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture20_12">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture20_11">
+                            </div>
+                        </div>
+                        <div class="x11Right18">
+                            <div class="x18Upper">
+                                <div class="newMainContentHeaderBgX18">
+                                    <img src="image1190.png" class="newMainContentHeaderLogo">
+                                    <h6 class="newMainContentHeaderPresents">Presents</h6>
+                                    <h5 class="newMainContentHeaderPerformance">Performance</h5>
+                                </div>
+                            </div>
+                            <div class="x18Lower">
+                                <div class="x18Middle">
+                                    <div class="newMainContentMiddleX13">
+                                        <div class="newMainContentRightInner">
+                                            <div class="newMainContentRightInnerMenu">
+                                                <div class="newMainContentRightInnerMenuContainer">
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                </div>
+                                            </div>
+                                            <div class="newMainContentRightInnerTextarea">
+                                                <textarea class="newMainContentTextarea" placeholder="..."></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="x13BottomVidsAlt">
+                                        <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture20_17">
+                                        <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture20_16">
+                                        <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture20_15">
+                                        <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture20_14">
+                                        <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture20_13">                                
+                                    </div>
+                                </div>
+                                <div class="x18Right">
+                                    <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture20_3">
+                                    <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture20_4">
+                                    <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture20_5">
+                                    <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture20_6">
+                                    <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture20_7">
+                                    <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture20_8">
+                                    <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture20_9">
+                                    <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture20_10">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Capture 21-->
+                    <div id="newMainContentAreaX21">
+                        <div class="newMainContentHeaderBg21">
+                            <img src="image1190.png" class="newMainContentHeaderLogo">
+                            <h6 class="newMainContentHeaderPresents">Presents</h6>
+                            <h5 class="newMainContentHeaderPerformance21">Performance</h5>
+                        </div>
+                        <div class="x21Lower">
+                            <div class="x18Right">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_1">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_2">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_11">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_12">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_18">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_19">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_20">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_21">
+                            </div>
+                            <div class="x18Middle">
+                                <div class="newMainContentMiddleX13">
+                                    <div class="newMainContentRightInner">
+                                        <div class="newMainContentRightInnerMenu">
+                                            <div class="newMainContentRightInnerMenuContainer">
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
+                                            </div>
+                                        </div>
+                                        <div class="newMainContentRightInnerTextarea">
+                                            <textarea class="newMainContentTextarea" placeholder="..."></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="x13BottomVidsAlt">
+                                    <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_17">
+                                    <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_16">
+                                    <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_15">
+                                    <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_14">
+                                    <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_13">                                
+                                </div>
+                            </div>
+                            <div class="x18Right">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_3">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_4">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_5">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_6">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_7">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_8">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_9">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_10">
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!--Capture 22-->
+                    <!--if using changeNewBorderColor vidCaptureXX_X in place of id, below classes are being reused and should be updated-->
+                    <div id="newMainContentAreaX22">
+                        <div class="x22Header">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture22_22">
+                            <div class="newMainContentHeaderBg22">
+                                <img src="image1190.png" class="newMainContentHeaderLogo">
+                                <h6 class="newMainContentHeaderPresents">Presents</h6>
+                                <h5 class="newMainContentHeaderPerformance21">Performance</h5>
+                            </div>
+                        </div>
+                        <div class="x21Lower">
+                            <div class="x18Right">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_1">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_2">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_11">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_12">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_18">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_19">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_20">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_21">
+                            </div>
+                            <div class="x18Middle">
+                                <div class="newMainContentMiddleX13">
+                                    <div class="newMainContentRightInner">
+                                        <div class="newMainContentRightInnerMenu">
+                                            <div class="newMainContentRightInnerMenuContainer">
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
+                                            </div>
+                                        </div>
+                                        <div class="newMainContentRightInnerTextarea">
+                                            <textarea class="newMainContentTextarea" placeholder="..."></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="x13BottomVidsAlt">
+                                    <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_17">
+                                    <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_16">
+                                    <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_15">
+                                    <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_14">
+                                    <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_13">                                
+                                </div>
+                            </div>
+                            <div class="x18Right">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_3">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_4">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_5">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_6">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_7">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_8">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_9">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_10">
+                            </div>
+                        </div>
+                    </div>
+                    <!--Capture 23-->
+                    <div id="newMainContentAreaX23">
+                        <div class="x22Header">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture22_22">
+                            <div class="newMainContentHeaderBg23">
+                                <img src="image1190.png" class="newMainContentHeaderLogoXL">
+                                <h6 class="newMainContentHeaderPresents">Presents</h6>
+                                <h5 class="newMainContentHeaderPerformance21">Performance</h5>
+                            </div>
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture23_23">
+                        </div>
+                        <div class="x21Lower">
+                            <div class="x18Right">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_1">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_2">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_11">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_12">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_18">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_19">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_20">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_21">
+                            </div>
+                            <div class="x18Middle">
+                                <div class="newMainContentMiddleX13">
+                                    <div class="newMainContentRightInner">
+                                        <div class="newMainContentRightInnerMenu">
+                                            <div class="newMainContentRightInnerMenuContainer">
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
+                                            </div>
+                                        </div>
+                                        <div class="newMainContentRightInnerTextarea">
+                                            <textarea class="newMainContentTextarea" placeholder="..."></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="x13BottomVidsAlt">
+                                    <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_17">
+                                    <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_16">
+                                    <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_15">
+                                    <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_14">
+                                    <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_13">                                
+                                </div>
+                            </div>
+                            <div class="x18Right">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_3">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_4">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_5">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_6">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_7">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_8">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_9">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_10">
+                            </div>
+                        </div>
+                    </div>
+                    <!--Capture 24-->
+                    <div id="newMainContentAreaX24">
+                        <div class="x22Header">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture22_22">
+                            <div class="newMainContentHeaderBg24">
+                                <img src="image1190.png" class="newMainContentHeaderLogoXL">
+                                <h6 class="newMainContentHeaderPresents">Presents</h6>
+                                <h5 class="newMainContentHeaderPerformance22">Performance</h5>
+                            </div>
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture24_24">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture23_23">
+                        </div>
+                        <div class="x21Lower">
+                            <div class="x18Right">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_1">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_2">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_11">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_12">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_18">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_19">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_20">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_21">
+                            </div>
+                            <div class="x18Middle">
+                                <div class="newMainContentMiddleX13">
+                                    <div class="newMainContentRightInner">
+                                        <div class="newMainContentRightInnerMenu">
+                                            <div class="newMainContentRightInnerMenuContainer">
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
+                                            </div>
+                                        </div>
+                                        <div class="newMainContentRightInnerTextarea">
+                                            <textarea class="newMainContentTextarea" placeholder="..."></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="x13BottomVidsAlt">
+                                    <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_17">
+                                    <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_16">
+                                    <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_15">
+                                    <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_14">
+                                    <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_13">                                
+                                </div>
+                            </div>
+                            <div class="x18Right">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_3">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_4">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_5">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_6">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_7">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_8">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_9">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_10">
+                            </div>
+                        </div>
+                    </div>
+                    <!--Capture 25-->
+                    <div id="newMainContentAreaX25">
+                        <div class="x22Header">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture22_22">
+                            <div class="newMainContentHeaderBg25">
+                                <img src="image1190.png" class="newMainContentHeaderLogoXL">
+                                <h6 class="newMainContentHeaderPresents">Presents</h6>
+                                <h5 class="newMainContentHeaderPerformance22">Performance</h5>
+                            </div>
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture25_25">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture24_24">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture23_23">
+                        </div>
+                        <div class="x21Lower">
+                            <div class="x18Right">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_1">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_2">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_11">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_12">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_18">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_19">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_20">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_21">
+                            </div>
+                            <div class="x18Middle">
+                                <div class="newMainContentMiddleX13">
+                                    <div class="newMainContentRightInner">
+                                        <div class="newMainContentRightInnerMenu">
+                                            <div class="newMainContentRightInnerMenuContainer">
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
+                                            </div>
+                                        </div>
+                                        <div class="newMainContentRightInnerTextarea">
+                                            <textarea class="newMainContentTextarea" placeholder="..."></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="x13BottomVidsAlt">
+                                    <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_17">
+                                    <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_16">
+                                    <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_15">
+                                    <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_14">
+                                    <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_13">                                
+                                </div>
+                            </div>
+                            <div class="x18Right">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_3">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_4">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_5">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_6">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_7">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_8">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_9">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_10">
+                            </div>
+                        </div>
+                    </div>
+                    <!--Capture 26-->
+                    <div id="newMainContentAreaX26">
+                        <div class="x22Header">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture22_22">
+                            <div class="newMainContentHeaderBg26">
+                                <img src="image1190.png" class="newMainContentHeaderLogoXL">
+                                <h6 class="newMainContentHeaderPresents">Presents</h6>
+                                <h5 class="newMainContentHeaderPerformance22">Performance</h5>
+                            </div>
+                            <div class="changeNewBorderColor vidCapture26_26">Balcony Seats</div>
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture25_25">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture24_24">
+                            <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture23_23">
+                        </div>
+                        <div class="x21Lower">
+                            <div class="x18Right">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_1">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_2">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_11">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_12">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_18">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_19">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_20">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_21">
+                            </div>
+                            <div class="x18Middle">
+                                <div class="newMainContentMiddleX13">
+                                    <div class="newMainContentRightInner">
+                                        <div class="newMainContentRightInnerMenu">
+                                            <div class="newMainContentRightInnerMenuContainer">
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
+                                            </div>
+                                        </div>
+                                        <div class="newMainContentRightInnerTextarea">
+                                            <textarea class="newMainContentTextarea" placeholder="..."></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="x13BottomVidsAlt">
+                                    <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_17">
+                                    <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_16">
+                                    <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_15">
+                                    <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_14">
+                                    <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_13">                                
+                                </div>
+                            </div>
+                            <div class="x18Right">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_3">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_4">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_5">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_6">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_7">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_8">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_9">
+                                <img src="vidPlaceholder.png" class="changeNewBorderColor vidCapture21_10">
+                            </div>
+                        </div>
+                    </div>
+
+            <!--below code is temporary used to show what different number of video captures look like
+                part of js code may be useful in react-->
+            <input type="number" id="vidCaptureChanger" min="1" max="26" value="1">
+            <style>
+                #vidCaptureChanger {
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                }
+            </style>
+            <script>
+                const vidCaptureChanger = document.getElementById('vidCaptureChanger');
+
+                vidCaptureChanger.addEventListener('change', e=> {
+                    // also update js line 1943 down
+                    for (let i = 1; i < 27; i++) {
+                        let x = 'newMainContentAreaX' + i;
+                        document.getElementById(x).style.display = 'none';                        
+                    }
+                    document.getElementById(`newMainContentAreaX${vidCaptureChanger.value}`).style.display = 'flex';
+                    
+                })
+            </script>
+            <!--end of temporary code-->
+
+<!--end new 02/11-->
+
+
+
+
+
+                
+<!--                
+                <div class="contentGridWrapperLeft">
+                    <video src="testVideo.mp4" class="resizeVideo"></video>
+                </div>
+                <div class="newMainContentCaptureWrapper1Yellow">
+                    <div class="newMainContentCaptureInner">
+                <div class="newMainContentNotesPanel1">
+                    <div id="manyGLnotes">
+                        <textarea id="newContentTextarea" placeholder="..."></textarea>
+                    </div>
+                    <div class="twoGLBtns">
+                    <div>                                        
+                        <p class="newRightSideTimerLabels">Song Time: 00:01:04:69</p>
+                    </div>
+             
+                    <div>
+                        <button class="textareaNotesBtns" onclick="textareaControls(1)">Keep</button>
+                        <button class="textareaNotesBtns" onclick="textareaControls(2)">Open</button>
+                        <button class="textareaNotesBtns" onclick="textareaControls(3)">Upload</button>     
+                    </div>
+                    </div> 
+                </div>
+                </div>
+                </div>
+                <div class="textareaControlsContainerOne">
+                    <a href="javascript:void(0)" class="closeTextAreaControls" onclick="closeTextareaControls()">&times;</a>
+                    <div class="textareaControlsKeepContainer">
+                        <div class="textareaSaveLocationSelectContainer">
+                            <p>
+                            <button type="button" data-toggle="collapse" data-target="#textareaSaveLocationChoice" aria-expanded="false" aria-controls="textareaSaveLocationChoice">
+                                Save to
+                              </button></p>
+                              <div class="collapse" id="textareaSaveLocationChoice">
+                                <select name="" id="" size="3">
+                                    <option value="notes">Notes</option>
+                                    <option value="resourceLibrary">Resource Library</option>
+                                    <option value="songLibrary">Song Library</option>
+                                </select>
+                            </div>                              
+                        </div>
+                        <div class="textareaSaveLocationNameContainer">
+                            <input type="text">
+                            <h5>Name your Selection</h5>
+                        </div>
+                        <button class="textareaSaveLocationSaveBtn" onclick="closeTextareaControls()">Save now</button>
+                    </div>
+                    <div class="textareaControlsOpenContainer">
+                        <button class="textareaControlsOpenBtns" onclick="openLeftMenuOptions(2)">Notes</button>
+                        <button class="textareaControlsOpenBtns" onclick="openLeftMenuOptions(1)">Resource Library</button>
+                        <button class="textareaControlsOpenBtns" onclick="openLeftMenuOptions(0)">Song Library</button>
+                    </div>
+                    <div class="textareaControlsUploadContainer">
+                        <label for="myfile">Select a file: (pdf or url only)</label>
+                        <input type="file" name="myfile">
+                        <button onclick="closeTextareaControls()">Upload</button>
+                    </div>
+                </div>                
+                <div class="contentGridWrapperRight">
+                    <video src="testVideo.mp4" class="resizeVideo"></video>
+                </div>
+            </div>
+-->
+             <div id="stageContainer">
+                <div class="newStageContainerWrapper">
+                    <div class="newMainContentCaptureInner"></div>
+                </div>
+    
+            </div>
+            <!--recording (New)-->
+            <div id="newRecordingProcessContainer">
+                <a href="javascript:void(0)" id="closeNewRecording" onclick="closeNewRecording()">&times;</a>
+                <!--recording (New) Panel 1 -->
+                <div id="newRecordingPanelOneContainer">
+                    <div id="newRecordingPanelOneTop">
+                        <input type="image" src="backBtn.png" onclick="closeNewRecording()">
+                    </div>
+                    <div id="newRecordingPanelOneMiddle">Select how to Record</div>
+                    <div id="newRecordingPanelOneBottom">
+                        <div class="newRecordingChoiceBtns">
+                            <button id="newRecordingChoiceBoth" onclick="newRecordingPanelTwo(2)">Record<br>Audio & Video</button>
+                        </div>
+                        <div class="newRecordingChoiceBtns">
+                            <button id="newRecordingChoiceAudio" onclick="newRecordingPanelTwo(1)">Record<br>Audio Only</button>
+                        </div>
+                        <div class="newRecordingChoiceBtns">
+                            <button id="newRecordingChoiceVideo" onclick="newRecordingPanelTwo(2)">Record<br>Video Only</button>
+                        </div>
+                    </div>
+                </div>
+                <!--recording (New) Panel 2 -->
+                <div id="newRecordingPanelTwoContainer">
+                    <div id="newRecordingPanelTwoTop">
+                        <input type="image" src="backBtn.png" onclick="goBackToNewRecordingPanelOne()">
+                    </div>
+                    <div id="newRecordingPanelTwoMiddle">Select Other Recording Features</div>
+                    <div class="tempTrackButtons">
+                        <button onclick="tempTrackButtons(0)">0</button>
+                        <button onclick="tempTrackButtons(1)">1</button>
+                    </div>
+                    <div id="newRecordingPanelTwoBottom">
+                       <div class="newRecordingPanelTwoOuterContainer">
+                            <div id="newRecordingPanelTwoInnerContainerLeft">
+                                <h5>Recording will<br>start</h5>
+                                <p>After start button is activated</p>
+                                <div id="newRecordingLeadTime">
+                                    <input type="number" id="newRecordingLeadTimeNum" value="3" min="1"></input>
+                                </div>
+                                <h5>Seconds</h5>
+                                <p style="margin-top: 10px;">Change Start Lead Time?</p>
+                                <div id="changeLeadTimeBtns">
+                                    <input type="image" src="changeLeadTimeMinus.png" onclick="newRecordingChangeLeadTime(1)">
+                                    <input type="image" src="changeLeadTimePlus.png" onclick="newRecordingChangeLeadTime(2)">
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="newRecordingPanelTwoOuterContainer" id="newRecordingPanelTwoWithoutTracks">
+                            <div id="newRecordingPanelTwoInnerContainerMiddle">
+                                <h5>You are<br>creating a<br>Follow Track</h5>
+                                <div id="newRecordingPanelTwoInnerContainerMiddleContent">When video<br>starts, be sure to<br>start with a<br>count-in for<br>other<br>bandmates</div>
+                             </div>
+                        </div>  
+                        <div class="newRecordingPanelTwoOuterContainer" id="newRecordingPanelTwoWithTracks">
+                            <div id="newRecordingPanelTwoInnerContainerMiddle">
+                                <h5>Your<br>Follow Track<br>is ready.</h5>
+                                <button class="newRecordingIncludeOtherTracks">Click to include<br> other track(s)</button>
+                                <button class="newRecordingFollowAllTracks">Follow All Tracks</button>
+                                <h6 class="newRecordingNameOfTrack">[Name of track to follow]</h6>
+                                <h6 class="newRecordingNameOfTrack">[Name of track to follow]</h6>
+                            </div>
+                        </div>
+                        <div class="newRecordingPanelTwoOuterContainer">
+                            <div id="newRecordingPanelTwoInnerContainerRight">
+                                <h5>Metronome</h5>
+                                <p>Leave blank to exclude from recording</p>
+                                <div id="newRecordingBPMLabel">BPM</div>
+                                <input type="text" id="newRecordingBPMNum"></input>
+             
+                                <h4>Time Signature</h4>
+                                <div id="newRecordingTimeSignatureContainer">
+                                    <select name="timeSigSelect" id="timeSigSelect" class="newRecordingTimeSignatureNum" >
+                                        <option value="4">4</option>
+                                        <option value="8">8</option>
+                                        <option value="12">12</option>
+                                        <option value="16">16</option>
+                                    </select>
+                                    <div id="newRecordingSlash">/</div>
+                                    <select class="newRecordingTimeSignatureNum" >
+                                        <option value="4">4</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="newRecordingPanelTwoContinueContainer">
+                        <button id="newRecordingPanelTwoSelectionsCompleteBtn1" onclick="newRecordingPanelThree()"></button>
+                    </div>
+                </div>
+                                <!--recording (New) Panel 3 -->
+                                <div id="newRecordingPanelThreeContainer">
+                                    <div id="newRecordingPanelThreeTop">
+                                        <input type="image" src="backBtn.png" onclick="goBackToNewRecordingPanelTwo()">
+                                    </div>
+                                    <div id="newRecordingPanelThreeMiddle">Camera Set-up</div>
+                                    <div id="newRecordingPanelThreeBottom">
+                                       <div id="newRecordingPanelThreeBottomLeft">
+                                           <div id="newRecordingPanelThreeBottomLeft1">
+                                            <p>Line up frame view</p>
+                                            <p>inside green screen</p>
+                                            <p>Make sure lighting</p>
+                                            <p>is adequate, not too</p>
+                                            <p>bright or dark</p>    
+                                           </div>
+                                    </div>
+                                       <div id="newRecordingPanelThreeBottomMiddleContainer">
+                                           <div id="threeBottomMiddleOuter">
+                                               <div id="threeBottomMiddleInner">
+
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div id="newRecordingPanelThreeBottomLeft">
+                                        <div id="newRecordingPanelThreeBottomLeft2">
+                                            <p>Find where you</p>
+                                            <p>want to stand and</p>
+                                            <p>use masking tape</p>
+                                            <p>on floor as a guide</p>
+                                            <p>Once satisfied, click</p>
+                                            <p><span id="brightGreenText">Camera Ready <img src="smallGreenArrow.png"></span></p>
+                                            <p>for next screen</p>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div id="newRecordingPanelThreeContinueContainer">
+                                        <button id="newRecordingPanelThreeSelectionsCompleteBtn2" onclick="newRecordingPanelFour()"></button>
+                                    </div>
+                                </div>
+                                <!--recording (New) Panel 4 -->
+                                <div id="newRecordingPanelFourContainer2">
+                                    <div class="newRecordingPanelFourSide">
+                                        <div class="newRecordingContentCaptureWrapper2">
+                                            <div class="newRecordingContentCaptureInner"></div>
+                                        </div>
+                                        <div id="newRecordingPanelFourBLeft">
+                                            <h5>1</h5>
+                                            <h5 class="newFourActive">2</h5>
+                                            <h5>3</h5>
+                                            <h5>4</h5>
+                                        </div>
+                                    </div>
+                                    <div class="newMainContentCaptureWrapper1Yellow">
+                                        <div class="newMainContentCaptureInner">
+                                        <div class="newMainContentNotes">
+                                            <div id="manyGLnotes">
+                                                <textarea id="newContentTextarea" placeholder="..."></textarea>
+                                            </div>
+                                            <div class="newRecordingTwoGLBtns">
+                                    <div>                                        
+                                        <p class="newRightSideTimerLabels">Song Time: 00:01:04:69</p>
+                                    </div>
+
+                                    <div>
+                                        <button class="textareaNotesBtns" onclick="textareaControls(4)">Keep</button>
+                                        <button class="textareaNotesBtns" onclick="textareaControls(5)">Open</button>
+                                        <button class="textareaNotesBtns" onclick="textareaControls(6)">Upload</button>     
+                                    </div>
+                                </div> 
+                                        </div>
+                                        </div>
+                                        </div>
+                                        <div class="textareaControlsContainer">
+                                    <a href="javascript:void(0)" class="closeTextAreaControls" onclick="closeTextareaControls()">&times;</a>
+                                            <div class="textareaControlsKeepContainer">
+                                                <div class="textareaSaveLocationSelectContainer">
+                                                    <p>
+                                                    <button type="button" data-toggle="collapse" data-target="#textareaSaveLocationChoice" aria-expanded="false" aria-controls="textareaSaveLocationChoice">
+                                                        Save to
+                                                    </button></p>
+                                                    <div class="collapse" id="textareaSaveLocationChoice">
+                                                        <select name="" id="" size="3">
+                                                            <option value="notes">Notes</option>
+                                                            <option value="resourceLibrary">Resource Library</option>
+                                                            <option value="songLibrary">Song Library</option>
+                                                        </select>
+                                                    </div>                              
+                                                </div>
+                                                <div class="textareaSaveLocationNameContainer">
+                                                    <input type="text">
+                                                    <h5>Name your Selection</h5>
+                                                </div>
+                                                <button class="textareaSaveLocationSaveBtn" onclick="closeTextareaControls()">Save now</button>
+                                            </div>
+                                            <div class="textareaControlsOpenContainer">
+                                                <button class="textareaControlsOpenBtns" onclick="openLeftMenuOptions(2)">Notes</button>
+                                                <button class="textareaControlsOpenBtns" onclick="openLeftMenuOptions(1)">Resource Library</button>
+                                                <button class="textareaControlsOpenBtns" onclick="openLeftMenuOptions(0)">Song Library</button>
+                                            </div>
+                                            <div class="textareaControlsUploadContainer">
+                                                <label for="myfile">Select a file: (pdf or url only)</label>
+                                                <input type="file" name="myfile">
+                                                <button onclick="closeTextareaControls()">Upload</button>
+                                            </div>
+                                        </div>
+                                        <div class="newRecordingPanelFourSide">
+                                            <div class="newRecordingContentCaptureWrapper2">
+                                                <div class="newRecordingContentCaptureInner"></div>
+                                            </div>
+                                            <div class="newRecordingPanelFourBRight" onclick="newRecordingPanelFive()">
+                                                <h4>Click to Start Recording</h4>
+                                                <p>in <span id="newRecordingActualLeadTime2">3</span> Seconds</p>
+                                            </div>
+                                        </div>
+                                </div>
+
+                                <!--recording (New) Panel 5 -->
+
+                                <div id="newRecordingPanelFiveContainer2">
+                                    <div class="newRecordingPanelFiveUpper">
+                                    <div class="newRecordingPanelFiveSide">
+                                        <div class="newRecordingContentCaptureWrapperFive2">
+                                            <div class="newRecordingContentCaptureInner"></div>
+                                        </div>
+                                    </div>
+                                        <div class="newMainContentCaptureWrapper1Yellow">
+                                            <div class="newMainContentCaptureInner">
+                                        <div class="newMainContentNotesFive">
+                                            <div id="manyGLnotes">
+                                                <textarea id="newContentTextareaFive" placeholder="..."></textarea>
+                                            </div>
+                                            <div class="newRecordingTwoGLBtns">
+                                        <div>                                        
+                                            <p class="newRightSideTimerLabels">Song Time: 00:01:04:69</p>
+                                        </div>
+
+                                        <div>
+                                            <button class="textareaNotesBtns" onclick="textareaControls(7)">Keep</button>
+                                            <button class="textareaNotesBtns" onclick="textareaControls(8)">Open</button>
+                                            <button class="textareaNotesBtns" onclick="textareaControls(9)">Upload</button>     
+                                        </div>
+                                            </div> 
+                                        </div>
+                                            </div>
+                                            </div>
+                                        <div class="textareaControlsContainer">
+                                            <a href="javascript:void(0)" class="closeTextAreaControls" onclick="closeTextareaControls()">&times;</a>
+                                            <div class="textareaControlsKeepContainer">
+                                                <div class="textareaSaveLocationSelectContainer">
+                                                    <p>
+                                                    <button type="button" data-toggle="collapse" data-target="#textareaSaveLocationChoice" aria-expanded="false" aria-controls="textareaSaveLocationChoice">
+                                                        Save to
+                                                    </button></p>
+                                                    <div class="collapse" id="textareaSaveLocationChoice">
+                                                        <select name="" id="" size="3">
+                                                            <option value="notes">Notes</option>
+                                                            <option value="resourceLibrary">Resource Library</option>
+                                                            <option value="songLibrary">Song Library</option>
+                                                        </select>
+                                                    </div>                              
+                                                </div>
+                                                <div class="textareaSaveLocationNameContainer">
+                                                    <input type="text">
+                                                    <h5>Name your Selection</h5>
+                                                </div>
+                                                <button class="textareaSaveLocationSaveBtn" onclick="closeTextareaControls()">Save now</button>
+                                            </div>
+                                            <div class="textareaControlsOpenContainer">
+                                                <button class="textareaControlsOpenBtns" onclick="openLeftMenuOptions(2)">Notes</button>
+                                                <button class="textareaControlsOpenBtns" onclick="openLeftMenuOptions(1)">Resource Library</button>
+                                                <button class="textareaControlsOpenBtns" onclick="openLeftMenuOptions(0)">Song Library</button>
+                                            </div>
+                                            <div class="textareaControlsUploadContainer">
+                                                <label for="myfile">Select a file: (pdf or url only)</label>
+                                                <input type="file" name="myfile">
+                                                <button onclick="closeTextareaControls()">Upload</button>
+                                            </div>
+                                        </div>
+                                        <div class="newRecordingPanelFiveSide">
+                                            <div class="newRecordingContentCaptureWrapperFive2">
+                                                <div class="newRecordingContentCaptureInner"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="newRecordingPanelFiveLower">
+                                        <a href="javascript:void(0)" id="closeNewRecording" onclick="closeNewRecording()">&times;</a>
+                                        <div id="panelFiveLowerText">Recording starts in...</div>
+                                        <div id="panelFiveLeadTime2">20</div>
+                                    </div>
+                                </div>
+
+                                <!--recording (New) Panel 6 -->
+
+                                 <div id="newRecordingPanelSixContainer2">
+                                    <div class="newRecordingPanelFourSide">
+                                        <div class="newRecordingContentCaptureWrapper2">
+                                            <div class="newRecordingContentCaptureInner"></div>
+                                        </div>
+                                        <div id="newRecordingPanelSixBLeft">
+                                            <div>
+                                                <h5 id="bpmCounter1">1</h5>
+                                                <p class="bpmCounterAddonsE" id="bpmCounter1E">e</p>
+                                                <p class="bpmCounterAddonsAnd" id="bpmCounter1And">&</p>
+                                                <p class="bpmCounterAddonsA" id="bpmCounter1A">a</p>
+                                            </div>
+                                            <div>
+                                                <h5 id="bpmCounter2">2</h5>
+                                                <p class="bpmCounterAddonsE" id="bpmCounter2E">e</p>
+                                                <p class="bpmCounterAddonsAnd" id="bpmCounter2And">&</p>
+                                                <p class="bpmCounterAddonsA" id="bpmCounter2A">a</p>
+                                            </div>
+                                            <div>
+                                                <h5 id="bpmCounter3">3</h5>
+                                                <p class="bpmCounterAddonsE" id="bpmCounter3E">e</p>
+                                                <p class="bpmCounterAddonsAnd" id="bpmCounter3And">&</p>
+                                                <p class="bpmCounterAddonsA" id="bpmCounter3A">a</p>
+                                            </div>
+                                            <div>
+                                                <h5 id="bpmCounter4">4</h5>
+                                                <p class="bpmCounterAddonsE" id="bpmCounter4E">e</p>
+                                                <p class="bpmCounterAddonsAnd" id="bpmCounter4And">&</p>
+                                                <p class="bpmCounterAddonsA" id="bpmCounter4A">a</p>
+                                            </div>                                         
+                                        </div>
+                                    </div>
+                                    <div class="newMainContentCaptureWrapper1Yellow">
+                                        <div class="newMainContentCaptureInner">
+                                        <div class="newMainContentNotes">
+                                            <div id="manyGLnotes">
+                                                <textarea id="newContentTextarea" placeholder="..."></textarea>
+                                            </div>
+                                            <div class="newRecordingTwoGLBtns">
+                                    <div>                                        
+                                        <p class="newRightSideTimerLabels">Song Time: 00:01:04:69</p>
+                                    </div>
+
+                                    <div>
+                                        <button class="textareaNotesBtns" onclick="textareaControls(4)">Keep</button>
+                                        <button class="textareaNotesBtns" onclick="textareaControls(5)">Open</button>
+                                        <button class="textareaNotesBtns" onclick="textareaControls(6)">Upload</button>     
+                                    </div>
+                                            </div> 
+                                        </div>
+                                            </div>
+                                            </div>
+                                            <div class="textareaControlsContainer">
+                                                <a href="javascript:void(0)" class="closeTextAreaControls" onclick="closeTextareaControls()">&times;</a>
+                                                <div class="textareaControlsKeepContainer">
+                                                    <div class="textareaSaveLocationSelectContainer">
+                                                        <p>
+                                                        <button type="button" data-toggle="collapse" data-target="#textareaSaveLocationChoice" aria-expanded="false" aria-controls="textareaSaveLocationChoice">
+                                                            Save to
+                                                        </button></p>
+                                                        <div class="collapse" id="textareaSaveLocationChoice">
+                                                            <select name="" id="" size="3">
+                                                                <option value="notes">Notes</option>
+                                                                <option value="resourceLibrary">Resource Library</option>
+                                                                <option value="songLibrary">Song Library</option>
+                                                            </select>
+                                                        </div>                              
+                                                    </div>
+                                                    <div class="textareaSaveLocationNameContainer">
+                                                        <input type="text">
+                                                        <h5>Name your Selection</h5>
+                                                    </div>
+                                                    <button class="textareaSaveLocationSaveBtn" onclick="closeTextareaControls()">Save now</button>
+                                                </div>
+                                                <div class="textareaControlsOpenContainer">
+                                                    <button class="textareaControlsOpenBtns" onclick="openLeftMenuOptions(2)">Notes</button>
+                                                    <button class="textareaControlsOpenBtns" onclick="openLeftMenuOptions(1)">Resource Library</button>
+                                                    <button class="textareaControlsOpenBtns" onclick="openLeftMenuOptions(0)">Song Library</button>
+                                                </div>
+                                                <div class="textareaControlsUploadContainer">
+                                                    <label for="myfile">Select a file: (pdf or url only)</label>
+                                                    <input type="file" name="myfile">
+                                                    <button onclick="closeTextareaControls()">Upload</button>
+                                                </div>
+                                            </div>
+                                        <div class="newRecordingPanelFourSide">
+                                            <div class="newRecordingContentCaptureWrapper2">
+                                                <div class="newRecordingContentCaptureInner"></div>
+                                            </div>
+                                            <div class="borderBlink newRecordingPanelSixBRight" onclick="newRecordingPanel7()">
+                                                <h4>Stop Recording</h4>
+                                            </div>
+                                        </div>
+                                </div>
+
+                                <div id="newRecordingPanel7Container">
+                                    <div class="saveOrNotContainer">
+                                        <button class="newRecordingPanel7Btns" onclick="newRecordingPanel8()">Close without Saving</button>
+                                        <div id="newRecordingPanel7InputContainer">
+                                            <input type="text" class="newRecordingPanel7Input">
+                                            <h6>Name of New Recording</h6>
+                                        </div>                                        
+                                        <button class="newRecordingPanel7Btns">Add to Tracks</button>
+                                    </div>
+                                </div>
+                                <div id="newRecordingPanel8Container">
+                                    <div class="saveOrNotContainer">
+                                        <button class="newRecordingPanel7Btns" onclick="closeNewRecording()">Click Again to Confirm<br>Close without Saving<br><span class="blinkingText">This track will not be retrievable</span></button>
+                                        <button id="newRecordingPanel8Cancel" onclick="newRecordingPanel7()">Cancel this action</button>
+                                    </div>
+                                </div>
+
+            </div>
+                    
+            <div id="newMainToolbarExtra">
+
+                <button class="newExtraMainBtn">GigTrack</button>
+
+                <button class="newExtraMainBtn" onclick="displayMetronome()">Metronome</button>
+                <button class="newExtraMainBtn" onclick="displayMixerNew()">Mixer</button>
+                <button class="newExtraMainBtn" onclick="newRecordingProcess()">Record</button>
+                <button class="newExtraMainBtn" onclick="displayTracks()">Tracks</button>
+                <button class="newExtraMainBtn" onclick="newChangeView()">View</button>
+                <button class="openchatbtn" id="openchatbtn" onclick="openChat()">Chat</button>
+                <a href="javascript:void(0)" id="closeExpandedToolbar" onclick="closeExpandedToolbar()">&times;</a>
+            </div>
+            <div id="newMainToolbar">
+                <input type="image" src="newMainBtn1.png">
+                <input type="image" src="newMainBtn2.png">
+                <input type="image" src="newMainBtn3.png">
+                <input type="image" src="newMainBtn4.png">
+                <input type="image" src="newMainBtn5.png">
+                <input type="image" src="newMainBtn6.png">
+                <input type="image" src="newMainBtn7.png">
+                <input type="image" src="newMainBtn8.png">
+            </div>
+                <button id="newCompactToolbar" onclick="expandToolbar()">Toolbar</button>            
+        </div>
+
+        
+    
+        <div class="mainBottom" id="mainBottom">
+            <div id="saveRecording">
+                <button id="closeRecordingNoSave" onclick="closeRecordNoSave()">Close without<br> Saving</button>
+                <p>Name your new recording</p>
+                <div id="saveInputOutsideWrapper">
+                    <div id="saveInputWrapper">
+                        <input type="text">
+                    </div>
+                    <div id="currentTime"></div>    
+                </div>
+                
+                <button id="saveRecordingBtn">Add to Tracks</button>
+            </div>
+            <div id="saveRecording">
+                <h3>Save Tracks</h3>
+                <button id="closeRecordingNoSave" onclick="closeRecordNoSave()">Close without<br> Saving</button>
+                <p>Name your new recording</p>
+                <div id="saveInputOutsideWrapper">
+                    <div id="saveInputWrapper">
+                        <input type="text">
+                    </div>
+                </div>
+                <button id="saveRecordingBtn">Add to Tracks and<br> Save to Library</button>
+            </div>
+   
+        
+            <div id="featuresPanel">
+                <h3>Features</h3>
+                <div id="bpmMeasurements">
+                    <div id="bpmLabels">
+                        <p>BPM</p>
+                        <p>Count-in</p>
+                        <p>Time Sig</p>
+                    </div>
+                    <div>
+                        <div id="bpmNum"></div>
+                        <div id="countInNum"></div>
+                        <div id="timeSigContainer">
+                            <div id="timeSigNum1"></div>
+                            <div id="timeSigNum2"></div>
+                        </div>
+                    </div>
+                </div>
+                <button id="startMetronomeContainer">
+                    <div id="startMetronomeBtn">Start<br>Metronome</div>
+                </button>
+            </div>
+            <div id="recordingPanel">
+                <a href="javascript:void(0)" id="closeRecordingPanel" onclick="closeRecordingPanel()">&times;</a>
+                <h3>Recording</h3>
+                <div id="followTrackContainer">
+                    <p>Follow Track</p>
+                    <div id="followTrackButtonsContainer">
+                        <button class="followTrackBtns">1</button>
+                        <button class="followTrackBtns">2</button>
+                        <button class="followTrackBtns">3</button>
+                        <button class="followTrackBtns">4</button>
+                        <button class="followTrackBtns">5</button>
+                        <button class="followTrackBtns">6</button>
+                    </div>
+                </div>
+                
+                <div id="recordingPanelText">
+                    <h2>Recording in</h2>
+                    <p>Lead time before count-in</p>
+                </div>
+                <div id="leadTime">
+                    <input type="number" id="leadTimeNum" value="10" min="1"></input>
+                </div>
+                
+                
+                <label>
+                    <input type="radio" name="recordingChoice">
+                    <button class="recordingChoiceBtns" onclick="displayRecordingInProcess()">
+                        <div class="recRecordVideo">Record<br>Audio/ Video</div>
+                    </button>
+                </label>
+                <label>
+                    <input type="radio" name="recordingChoice">
+                    <button class="recordingChoiceBtns" onclick="displayRecordingInProcess()">
+                        <div id="recRecordAudio">Record<br>Audio only</div>
+                    </button>
+                </label>
+                <label>
+                    <input type="radio" name="recordingChoice">
+                    <button class="recordingChoiceBtns" onclick="displayRecordingInProcess()">
+                        <div class="recRecordVideo">Record<br>Video only</div>
+                    </button>
+                </label>
+            </div>
+            
+             <div id="recordingInProcessPanel">
+               <div id="leadTime">
+                    <img src="secondBtn04.png" id="leadTimeBg">
+                    <div id="leadTimeNumCountdown"></div>
+                </div>
+                <input type="image" src="recordingInProcess1.png">
+                <input type="image" src="recordingInProcess2.png">
+                <input type="image" src="recordingInProcess3.png" onclick="displaySaveRecording()">
+            </div>
+        </div>
+        <div id="tracksContainer">
+            <div id="tracksToolbar">
+                <button id="shiftingTrackBtn">Shifting track</button>
+                <button id="cursorBtn">Cursor</button>
+            </div>
+            <a href="javascript:void(0)" id="closeTracks" onclick="closeTracks()">&times;</a>
+ 
+            <div id="tracksInner">
+                <div id="tracksLeftSide">
+                    <div class="trackLeft">
+                        <div class="trackLeftMainLabel">Track 1</div>
+                        <input type="range" min="1" max="100" value="75" class="trackSlider">
+                        <button class="trackLeftBtnM">M</button>
+                        <button class="trackLeftBtnS">S</button>
+                        <button class="trackLeftBtnDelete">Delete</button>
+                    </div>
+                    <div class="trackLeft">
+                        <div class="trackLeftMainLabel">Track 2</div>
+                        <input type="range" min="1" max="100" value="75" class="trackSlider">
+                        <button class="trackLeftBtnM">M</button>
+                        <button class="trackLeftBtnS">S</button>
+                        <button class="trackLeftBtnDelete">Delete</button>
+                    </div>
+                    <div class="trackLeft">
+                        <div class="trackLeftMainLabel">Track 3</div>
+                        <input type="range" min="1" max="100" value="75" class="trackSlider">
+                        <button class="trackLeftBtnM">M</button>
+                        <button class="trackLeftBtnS">S</button>
+                        <button class="trackLeftBtnDelete">Delete</button>
+                    </div>
+                    <div class="trackLeft">
+                        <div class="trackLeftMainLabel">Track 4</div>
+                        <input type="range" min="1" max="100" value="75" class="trackSlider">
+                        <button class="trackLeftBtnM">M</button>
+                        <button class="trackLeftBtnS">S</button>
+                        <button class="trackLeftBtnDelete">Delete</button>
+                    </div>
+                    <div class="trackLeft">
+                        <div class="trackLeftMainLabel">Track 5</div>
+                        <input type="range" min="1" max="100" value="75" class="trackSlider">
+                        <button class="trackLeftBtnM">M</button>
+                        <button class="trackLeftBtnS">S</button>
+                        <button class="trackLeftBtnDelete">Delete</button>
+                    </div>
+                    <div class="trackLeft">
+                        <div class="trackLeftMainLabel">Track 6</div>
+                        <input type="range" min="1" max="100" value="75" class="trackSlider">
+                        <button class="trackLeftBtnM">M</button>
+                        <button class="trackLeftBtnS">S</button>
+                        <button class="trackLeftBtnDelete">Delete</button>
+                    </div>       
+                </div>
+                <div class="tracks">
+                    <div id="trackLabels">
+                        <p>Track Name</p>
+                        <p>Track #</p>
+                        <p>Notes</p>
+                    </div>
+                    <div id="trackLineNumbers">
+                        <p>1.0</p>
+                        <p>0.5</p>
+                        <p>0.0</p>
+                        <p>-0.5</p>
+                        <p>-1.0</p>
+                    </div>
+                    <div class="trackLines">
+                        <div id="trackLine1"></div>
+                        <div id="trackLine2"></div>
+                        <div id="trackLine3"></div>
+                        <div id="trackLine4"></div>
+                        <div id="trackLine5"></div>
+                    </div>
+                </div>
+    
+        </div>
+    </div>
+    <div id="mixerCombo">
+        <div id="draggableMixerItem">
+<!--new 02/20 this will be used at a later date-->
+<!--            
+        <div id="mixerPanelNew">
+            <div id="mixerPanelNewInner">
+                <div id="mixerPanelNewUpper">
+                    <div id="mixerPanelVolumeMasterOuter">
+                        <div class="mixerPanelVolumeLeft">
+                            <img src="newMixerClip.png" class="newMixerClip">
+                            <h4>14db</h4>
+                            <input type="image" src="newMixerVolumeUp1.png" class="newMixerClip">
+                            <input type="image" src="newMixerVolumeDown1.png" class="newMixerClip">
+                            <h5>Volume<br>Master</h5>
+                        </div>
+                        <div class="mixerPanelVolumeRight">
+                            <img src="newMixerVolumeBarDouble.png" class="newMixerVolumeDoubleBars">
+                        </div>
+                    </div>
+                    <div class="mixerPanelVolumeTrackOuter">
+                        <div class="mixerPanelVolumeLeftSingle">
+                            <img src="newMixerClip.png" class="newMixerClipSingle">
+                            <h4>14db</h4>
+                             <input type="image" src="newMixerVolumeUp2.png" class="newMixerClipSingle">
+                            <input type="image" src="newMixerVolumeDown2.png" class="newMixerClipSingle">
+                            <h5 class="whiteText">Volume<br>Track 1</h5>
+                        </div>
+                        <div class="mixerPanelVolumeRightSingle">
+                            <img src="newMixerVolumeBarSingle.png" class="newMixerVolumeBars">
+                        </div>
+                    </div>
+                    <div class="mixerPanelVolumeTrackOuter">
+                        <div class="mixerPanelVolumeLeftSingle">
+                            <img src="newMixerClip.png" class="newMixerClipSingle">
+                            <h4>14db</h4>
+                             <input type="image" src="newMixerVolumeUp2.png" class="newMixerClipSingle">
+                            <input type="image" src="newMixerVolumeDown2.png" class="newMixerClipSingle">
+                            <h5 class="whiteText">Volume<br>Track 2</h5>
+                        </div>
+                        <div class="mixerPanelVolumeRightSingle">
+                            <img src="newMixerVolumeBarSingle.png" class="newMixerVolumeBars">
+                        </div>
+                    </div>
+                    <div class="mixerPanelVolumeTrackOuter">
+                        <div class="mixerPanelVolumeLeftSingle">
+                            <img src="newMixerClip.png" class="newMixerClipSingle">
+                            <h4>14db</h4>
+                            <input type="image" src="newMixerVolumeUp2.png" class="newMixerClipSingle">
+                            <input type="image" src="newMixerVolumeDown2.png" class="newMixerClipSingle">
+                            <h5 class="whiteText">Volume<br>Track 3</h5>
+                        </div>
+                        <div class="mixerPanelVolumeRightSingle">
+                            <img src="newMixerVolumeBarSingle.png" class="newMixerVolumeBars">
+                        </div>
+                    </div>
+                    <div class="mixerPanelVolumeTrackOuter">
+                        <div class="mixerPanelVolumeLeftSingle">
+                            <img src="newMixerClip.png" class="newMixerClipSingle">
+                            <h4>14db</h4>
+                            <input type="image" src="newMixerVolumeUp2.png" class="newMixerClipSingle">
+                            <input type="image" src="newMixerVolumeDown2.png" class="newMixerClipSingle">
+                            <h5 class="whiteText">Volume<br>Track 4</h5>
+                        </div>
+                        <div class="mixerPanelVolumeRightSingle">
+                            <img src="newMixerVolumeBarSingle.png" class="newMixerVolumeBars">
+                        </div>
+                    </div>
+                    <div class="mixerPanelVolumeTrackOuter">
+                        <div class="mixerPanelVolumeLeftSingle">
+                            <img src="newMixerClip.png" class="newMixerClipSingle">
+                            <h4>14db</h4>
+                            <input type="image" src="newMixerVolumeUp2.png" class="newMixerClipSingle">
+                            <input type="image" src="newMixerVolumeDown2.png" class="newMixerClipSingle">
+                            <h5 class="whiteText">Volume<br>Track 5</h5>
+                        </div>
+                        <div class="mixerPanelVolumeRightSingle">
+                            <img src="newMixerVolumeBarSingle.png" class="newMixerVolumeBars">
+                        </div>
+                    </div>
+                    <div class="mixerPanelVolumeTrackOuter">
+                        <div class="mixerPanelVolumeLeftSingle">
+                            <img src="newMixerClip.png" class="newMixerClipSingle">
+                            <h4>14db</h4>
+                            <input type="image" src="newMixerVolumeUp2.png" class="newMixerClipSingle">
+                            <input type="image" src="newMixerVolumeDown2.png" class="newMixerClipSingle">
+                            <h5 class="whiteText">Volume<br>Track 6</h5>
+                        </div>
+                        <div class="mixerPanelVolumeRightSingle">
+                            <img src="newMixerVolumeBarSingle.png" class="newMixerVolumeBars">
+                        </div>
+                    </div>
+                    <div class="mixerPanelVolumeTrackOuter">
+                        <div class="mixerPanelVolumeLeftSingle">
+                            <img src="newMixerClip.png" class="newMixerClipSingle">
+                            <h4>14db</h4>
+                            <input type="image" src="newMixerVolumeUp2.png" class="newMixerClipSingle">
+                            <input type="image" src="newMixerVolumeDown2.png" class="newMixerClipSingle">
+                            <h5 class="whiteText">Volume<br>Track 7</h5>
+                        </div>
+                        <div class="mixerPanelVolumeRightSingle">
+                            <img src="newMixerVolumeBarSingle.png" class="newMixerVolumeBars">
+                        </div>
+                    </div>
+                    <div class="mixerPanelVolumeTrackOuter">
+                        <div class="mixerPanelVolumeLeftSingle">
+                            <img src="newMixerClip.png" class="newMixerClipSingle">
+                            <h4>14db</h4>
+                            <input type="image" src="newMixerVolumeUp2.png" class="newMixerClipSingle">
+                            <input type="image" src="newMixerVolumeDown2.png" class="newMixerClipSingle">
+                            <h5 class="whiteText">Volume<br>Track 8</h5>
+                        </div>
+                        <div class="mixerPanelVolumeRightSingle">
+                            <img src="newMixerVolumeBarSingle.png" class="newMixerVolumeBars">
+                        </div>
+                    </div>
+                    <div class="mixerPanelVolumeTrackOuter">
+                        <div class="mixerPanelVolumeLeftSingle">
+                            <img src="newMixerClip.png" class="newMixerClipSingle">
+                            <h4>14db</h4>
+                            <input type="image" src="newMixerVolumeUp2.png" class="newMixerClipSingle">
+                            <input type="image" src="newMixerVolumeDown2.png" class="newMixerClipSingle">
+                            <h5 class="whiteText">Volume<br>Track 9</h5>
+                        </div>
+                        <div class="mixerPanelVolumeRightSingle">
+                            <img src="newMixerVolumeBarSingle.png" class="newMixerVolumeBars">
+                        </div>
+                    </div>
+                </div>
+                <div id="mixerPanelNewLower">
+                    <div id="mixerPanelNewLowerLeft">
+                        <button class="mixerPanelLowerAudioBtn">Audio</button>
+                    </div>
+                    <div id="mixerPanelNewLowerMiddle">
+                        <h5>Master Mix</h5>
+                        <div class="mixerPanelToggleContainer">
+                            <button id="mixerPanelToggleOff" onclick="mixerPanelToggleSwitch(0)">Off</button>
+                            <button id="mixerPanelToggleOn" onclick="mixerPanelToggleSwitch(1)">On</button>
+                        </div>
+                        <h6>Master Mix Assign</h6>
+                        <button class="mixerPanelLowerHostBtn">Host</button>
+                    </div>
+                    <div id="mixerPanelNewLowerRight">
+                        <h5>Input Gain</h5>
+                        <img src="newMixerInputGainColor.png">
+                        <div id="controlPanelMasterVolume">
+                            <input type="range" min="1" max="10" value="2" id="controlPanelMasterVolumeSlider">
+                        </div>
+                        <input type="image" src="mixerInternalMic.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    -->
+    <h5 id="tempMixerStage">Mixer in development stage. Coming soon.</h5>
+<!--end new 02/20-->        
+        <div id="tracksContainerNew">
+             <div class="tracksNew">
+                    <div class="trackLabelsNew">
+                        <div class="trackLabelNewTrackName">#1 - [Name]</div>
+                        <div class="trackLabelNewMContainer">
+                            <button class="trackLabelMBtn">M</button>
+                            <button class="trackLabelDeleteBtn">Delete</button>
+                        </div>
+                        <div class="trackLabelNewSContainer">
+                            <button class="trackLabelSBtn">S</button>
+                            <button class="trackLabelNotesBtn">Notes</button>
+                        </div>
+                    </div>
+                    <div class="trackLineNumbersNew">
+                        <div class="trackLineNumNew">1.0</div>
+                        <div class="trackLineNumNew">0.5</div>
+                        <div class="trackLineNumNew">0.0</div>
+                        <div class="trackLineNumNew">-0.5</div>
+                        <div class="trackLineNumNew">-1.0</div>
+                    </div>
+                    <div class="trackLinesNew">
+        <!-- Do NOT delete the letter 'a' below. It is used for styling purposes. -->
+        <!-- It is hidden. You can append text or numbers to it. -->                
+                        <div class="trackLineSingleNew">a</div>
+                        <div class="trackLineSingleNew">a</div>
+                        <div class="trackLineSingleNew">a</div>
+                        <div class="trackLineSingleNew">a</div>
+                        <div class="trackLineSingleNew">a</div>
+                    </div>     
+                </div>
+                <div class="tracksNew">
+                    <div class="trackLabelsNew">
+                        <div class="trackLabelNewTrackName">#1 - [Name]</div>
+                        <div class="trackLabelNewMContainer">
+                            <button class="trackLabelMBtn">M</button>
+                            <button class="trackLabelDeleteBtn">Delete</button>
+                        </div>
+                        <div class="trackLabelNewSContainer">
+                            <button class="trackLabelSBtn">S</button>
+                            <button class="trackLabelNotesBtn">Notes</button>
+                        </div>
+                    </div>
+                    <div class="trackLineNumbersNew">
+                        <div class="trackLineNumNew">1.0</div>
+                        <div class="trackLineNumNew">0.5</div>
+                        <div class="trackLineNumNew">0.0</div>
+                        <div class="trackLineNumNew">-0.5</div>
+                        <div class="trackLineNumNew">-1.0</div>
+                    </div>
+                    <div class="trackLinesNew">
+        <!-- Do NOT delete the letter 'a' below. It is used for styling purposes. -->
+        <!-- It is hidden. You can append text or numbers to it. -->                
+                        <div class="trackLineSingleNew">a</div>
+                        <div class="trackLineSingleNew">a</div>
+                        <div class="trackLineSingleNew">a</div>
+                        <div class="trackLineSingleNew">a</div>
+                        <div class="trackLineSingleNew">a</div>
+                    </div>     
+                </div>
+                <div class="tracksNew">
+                    <div class="trackLabelsNew">
+                        <div class="trackLabelNewTrackName">#1 - [Name]</div>
+                        <div class="trackLabelNewMContainer">
+                            <button class="trackLabelMBtn">M</button>
+                            <button class="trackLabelDeleteBtn">Delete</button>
+                        </div>
+                        <div class="trackLabelNewSContainer">
+                            <button class="trackLabelSBtn">S</button>
+                            <button class="trackLabelNotesBtn">Notes</button>
+                        </div>
+                    </div>
+                    <div class="trackLineNumbersNew">
+                        <div class="trackLineNumNew">1.0</div>
+                        <div class="trackLineNumNew">0.5</div>
+                        <div class="trackLineNumNew">0.0</div>
+                        <div class="trackLineNumNew">-0.5</div>
+                        <div class="trackLineNumNew">-1.0</div>
+                    </div>
+                    <div class="trackLinesNew">
+        <!-- Do NOT delete the letter 'a' below. It is used for styling purposes. -->
+        <!-- It is hidden. You can append text or numbers to it. -->                
+                        <div class="trackLineSingleNew">a</div>
+                        <div class="trackLineSingleNew">a</div>
+                        <div class="trackLineSingleNew">a</div>
+                        <div class="trackLineSingleNew">a</div>
+                        <div class="trackLineSingleNew">a</div>
+                    </div>     
+                </div>
+    </div>
+    </div>
+    <a href="javascript:void(0)" id="closeMixerNew" onclick="closeMixerNew()">&times;</a>
+</div>
+<!--    
+    <div id="mixerPanel">
+        <div id="mixerPanelHeading">Tracking</div>
+        <div id="mixerAudioSettings">
+            <p id="mixerAudioSettingsLabel">Audio Settings</p>
+            <p id="inputGainLabel">Input Gain</p>
+            <div id="mixerInputGainColor">
+                <input type="range" min="1" max="100" value="75" class="mixerInputGainColorSlider">
+            </div>
+            <div id="mixerInputGainBlue">
+                <input type="range" min="1" max="100" value="75" class="mixerInputGainBlueSlider">
+            </div>
+            <input type="image" src="mixerInternalMic.png">
+        </div>
+        
+        <div id="mixerMasterMix">
+            <h3>Master Mix</h3>
+            <label class="mixerMasterSwitch">
+                <input type="checkbox" checked>
+                <span class="mixerMasterSlider round"></span>
+            </label>
+            <div id="mixerMasterSwitchToggle">
+                <p>Disabled</p>
+                <p>Enabled</p>
+            </div>
+             <h4>Master Mix Assign</h4>
+             <button id="mixerMasterHost">Host</button> 
+        </div>
+        <div id="mixerTrackContainer">
+            <div class="mixerTrackInner">
+                <div class="mixerTrackUpper">
+                    <input type="range" min="1" max="100" value="80" class="mixerTrackSlider">
+                </div>
+                <div class="mixerTrackLower">Track 1</div>
+            </div>
+            <div class="mixerTrackInner">
+                <div class="mixerTrackUpper">
+                    <input type="range" min="1" max="100" value="80" class="mixerTrackSlider">
+                </div>
+                <div class="mixerTrackLower">Track 2</div>
+            </div>
+            <div class="mixerTrackInner">
+                <div class="mixerTrackUpper">
+                    <input type="range" min="1" max="100" value="80" class="mixerTrackSlider">
+                </div>
+                <div class="mixerTrackLower">Track 3</div>
+            </div>
+            <div class="mixerTrackInner">
+                <div class="mixerTrackUpper">
+                    <input type="range" min="1" max="100" value="80" class="mixerTrackSlider">
+                </div>
+                <div class="mixerTrackLower">Track 4</div>
+            </div>
+            <div class="mixerTrackInner">
+                <div class="mixerTrackUpper">
+                    <input type="range" min="1" max="100" value="80" class="mixerTrackSlider">
+                </div>
+                <div class="mixerTrackLower">Track 5</div>
+            </div>
+            <div class="mixerTrackInner">
+                <div class="mixerTrackUpper">
+                    <input type="range" min="1" max="100" value="80" class="mixerTrackSlider">
+                </div>
+                <div class="mixerTrackLower">Track 6</div>
+            </div>
+            <div class="mixerTrackInner">
+                <div class="mixerTrackUpper">
+                    <input type="range" min="1" max="100" value="80" class="mixerTrackSlider">
+                </div>
+                <div class="mixerTrackLower">Track 7</div>
+            </div>
+            <div class="mixerTrackInner">
+                <div class="mixerTrackUpper">
+                    <input type="range" min="1" max="100" value="80" class="mixerTrackSlider">
+                </div>
+                <div class="mixerTrackLower">Track 8</div>
+            </div>
+        </div>
+        <div id="mixerMasterSliderContainer">
+            <div id="mixerMasterSliderUpper">
+                <div id="mixerMasterGray">
+                    <input type="range" min="1" max="100" value="80" class="mixerMasterSliderGray">
+                </div>
+                <div id="mixerMasterColor"></div>
+            </div>
+            <div id="mixerMasterSliderLower">Master</div>
+        </div>
+        
+        <a href="javascript:void(0)" id="closeMixer" onclick="closeMixer()">&times;</a>
+    </div>
+-->    
+        <div id="metronomePanel">
+            <div id="metronomePanelOne">
+            <div class="metronomePanelOuterContainer">
+                <div id="newRecordingPanelTwoInnerContainerRight">
+                    <h5>Metronome</h5>
+                    <div id="newRecordingBPMLabel">BPM</div>
+                    <input type="text" id="newRecordingBPMNumAlt"></input>
+ 
+                    <h4>Time Signature</h4>
+                    <div id="newRecordingTimeSignatureContainer">
+                        <select name="timeSigSelect" id="timeSigSelectAlt" class="newRecordingTimeSignatureNum" >
+                            <option value="4">4</option>
+                            <option value="8">8</option>
+                            <option value="12">12</option>
+                            <option value="16">16</option>
+                        </select>
+                        <div id="newRecordingSlash">/</div>
+                        <select class="newRecordingTimeSignatureNum" >
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <button class="metronomeNavBtns" onclick="metronomePanelSwitch(1)">Next</button>
+        </div>
+        <div id="metronomePanelTwo">
+            <div id="newRecordingPanelSixBLeftAlt">
+                <div>
+                    <h5 id="bpmCounter1Alt">1</h5>
+                    <p class="bpmCounterAddonsE" id="bpmCounter1EAlt">e</p>
+                    <p class="bpmCounterAddonsAnd" id="bpmCounter1AndAlt">&</p>
+                    <p class="bpmCounterAddonsA" id="bpmCounter1AAlt">a</p>
+                </div>
+                <div>
+                    <h5 id="bpmCounter2Alt">2</h5>
+                    <p class="bpmCounterAddonsE" id="bpmCounter2EAlt">e</p>
+                    <p class="bpmCounterAddonsAnd" id="bpmCounter2AndAlt">&</p>
+                    <p class="bpmCounterAddonsA" id="bpmCounter2AAlt">a</p>
+                </div>
+                <div>
+                    <h5 id="bpmCounter3Alt">3</h5>
+                    <p class="bpmCounterAddonsE" id="bpmCounter3EAlt">e</p>
+                    <p class="bpmCounterAddonsAnd" id="bpmCounter3AndAlt">&</p>
+                    <p class="bpmCounterAddonsA" id="bpmCounter3AAlt">a</p>
+                </div>
+                <div>
+                    <h5 id="bpmCounter4Alt">4</h5>
+                    <p class="bpmCounterAddonsE" id="bpmCounter4EAlt">e</p>
+                    <p class="bpmCounterAddonsAnd" id="bpmCounter4AndAlt">&</p>
+                    <p class="bpmCounterAddonsA" id="bpmCounter4AAlt">a</p>
+                </div>
+            </div>                                         
+            <button class="metronomeNavBtns" onclick="metronomePanelSwitch(2)">Back</button>
+        </div>
+
+            <a href="javascript:void(0)" id="closeMetronome" onclick="closeMetronome()">&times;</a>
+        </div>
+<!--new 01/16-->
+        <div id="lilOnesContainer">
+            <div id="lilOnesUpper">
+                <img src="lilOnes1.png" class="lilOnesImage active">
+                <img src="lilOnes2.png" class="lilOnesImage">
+                <img src="lilOnes3.png" class="lilOnesImage">
+                <img src="lilOnes4.png" class="lilOnesImage">
+                <img src="lilOnes5.png" class="lilOnesImage">
+                <img src="lilOnes6.png" class="lilOnesImage">
+                <img src="lilOnes7.png" class="lilOnesImage">
+                <img src="lilOnes8.png" class="lilOnesImage">
+                <img src="lilOnes9.png" class="lilOnesImage">
+                <img src="lilOnes10.png" class="lilOnesImage">
+                <img src="lilOnes11.png" class="lilOnesImage">
+                <img src="lilOnes12.png" class="lilOnesImage">
+                <img src="lilOnes13.png" class="lilOnesImage">
+                <img src="lilOnes14.png" class="lilOnesImage">
+                <img src="lilOnes15.png" class="lilOnesImage">
+                <img src="lilOnes16.png" class="lilOnesImage">
+                <img src="lilOnes17.png" class="lilOnesImage">
+                <img src="lilOnes18.png" class="lilOnesImage">
+                <img src="lilOnes19.png" class="lilOnesImage">
+                <img src="lilOnes20.png" class="lilOnesImage">
+                <img src="lilOnes21.png" class="lilOnesImage">
+                <img src="lilOnes22.png" class="lilOnesImage">
+                <img src="lilOnes23.png" class="lilOnesImage">
+                <img src="lilOnes24.png" class="lilOnesImage">
+                <img src="lilOnes25.png" class="lilOnesImage">
+                <img src="lilOnes26.png" class="lilOnesImage">
+                <img src="lilOnes27.png" class="lilOnesImage">
+                <img src="lilOnes28.png" class="lilOnesImage">
+                <img src="lilOnes29.png" class="lilOnesImage">
+                <img src="lilOnes30.png" class="lilOnesImage">
+                <img src="lilOnes31.png" class="lilOnesImage">
+            </div>
+            <div id="lilOnesLower">
+                <div id="lilOnesCheck">
+                    <input type="checkbox" name="lilOnesContinuous" id="lilOnesContinuous" value="lilOnesContinuous" checked>
+                    <label for="lilOnesContinuous" id="lilOnesContinuousLabel">Keep playing</label>
+                </div>
+                <div id="lilOnesAnimationSpeed">
+                    <input type="number" name="lilOnesAnimationSpeed" id="lilOnesSpeed" value="1">
+                    <label for="lilOnesAnimationSpeed" id="lilOnesSpeedLabel">Animation speed</label>
+                </div>
+                <button id="lilOnesStartBtn">Play</button>
+                
+            </div>
+            <a href="javascript:void(0)" id="closeLilOnes" onclick="closeLilOnes()">&times;</a>
+        </div>
+<!--end new 01/16-->
+    </main>
+<!--new 02/20-->    
+        <div id="mySidepane2" class="sidepane2">
+            <a href="javascript:void(0)" class="closechatbtn" onclick="closeChat()">&times;</a>
+        <!--
+            <div id="chatMessagesName">Jessica</div>
+        -->    
+            <div id="chatMessagesContainer">
+                <div>
+                <div class="chatMessagesReceivedFrom">Richard</div>                
+                <div class="chatMessagesReceived">hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hellohello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello</div>
+                <div class="chatMessagesSentFrom">Andrew</div>
+                <div class="chatMessagesSent">hi hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hellohello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello</div>
+                <div class="chatMessagesReceivedFrom">Jessica</div>
+                <div class="chatMessagesReceived">hello</div>
+                <div class="chatMessagesSentFrom">Richard</div>
+                <div class="chatMessagesSent">hi</div>
+                <div class="chatMessagesReceivedFrom">Jessica</div>
+                <div class="chatMessagesReceived">hello</div>
+                <div class="chatMessagesSentFrom">Richard</div>
+                <div class="chatMessagesSent">hi</div>
+                <div class="chatMessagesReceivedFrom">Jessica</div>
+                <div class="chatMessagesReceived">hello</div>
+                <div class="chatMessagesSentFrom">Richard</div>
+                <div class="chatMessagesSent">hi hello hello hello hello hello hello hello hello hello hello hello hello hello hello hellohello hello hello hello hello hello</div>
+                <div class="chatMessagesReceivedFrom">Jessica</div>
+                <div class="chatMessagesReceived">hello</div>
+                <div class="chatMessagesSentFrom">Richard</div>
+                <div class="chatMessagesSent">hi</div>
+                <div class="chatMessagesReceivedFrom">Jessica</div>
+                <div class="chatMessagesReceived">hello</div>
+                <div class="chatMessagesSentFrom">Richard</div>
+                <div class="chatMessagesSent">hi</div>
+                <div class="chatMessagesReceivedFrom">Jessica</div>
+                <div class="chatMessagesReceived">hello</div>
+                <div class="chatMessagesSentFrom">Richard</div>
+                <div class="chatMessagesSent">hi</div>
+                <div class="chatMessagesReceivedFrom">Jessica</div>
+                <div class="chatMessagesReceived">hello</div>
+                <div class="chatMessagesSentFrom">Richard</div>
+                <div class="chatMessagesSent">hi</div>
+                <div class="chatMessagesReceivedFrom">Jessica</div>
+                <div class="chatMessagesReceived">hello</div>
+                <div class="chatMessagesSentFrom">Richard</div>
+                <div class="chatMessagesSent">hi</div>
+                <div class="chatMessagesReceivedFrom">Jessica</div>
+                <div class="chatMessagesReceived">hello</div>
+                <div class="chatMessagesSentFrom">Richard</div>
+                <div class="chatMessagesSent">hi</div>
+                <div class="chatMessagesReceivedFrom">Jessica</div>
+                <div class="chatMessagesReceived">hello</div>
+                <div class="chatMessagesSentFrom">Richard</div>
+                <div class="chatMessagesSent">hi</div>
+                <div class="chatMessagesReceivedFrom">Jessica</div>
+                <div class="chatMessagesReceived">hello</div>
+                <div class="chatMessagesSentFrom">Richard</div>
+                <div class="chatMessagesSent">hi</div>
+                <div class="chatMessagesReceivedFrom">Jessica</div>
+                <div class="chatMessagesReceived">hello</div>
+                <div class="chatMessagesSentFrom">Richard</div>
+                <div class="chatMessagesSent">hi</div>
+                <div class="chatMessagesReceivedFrom">Jessica</div>
+                <div class="chatMessagesReceived">hello</div>
+                <div class="chatMessagesSentFrom">Richard</div>
+                <div class="chatMessagesSent">hi</div>
+                <div class="chatMessagesReceivedFrom">Jessica</div>
+                <div class="chatMessagesReceived">hello</div>
+                <div class="chatMessagesSentFrom">Richard</div>
+                <div class="chatMessagesSent">hi</div>
+                <div class="chatMessagesReceivedFrom">Richard</div>
+                <div class="chatMessagesReceived">Hi, what's happpening?</div>
+                <div class="chatMessagesSentFrom">Andrew</div>
+                <div class="chatMessagesSent">Working on apps</div>
+                <div class="chatMessagesReceivedFrom">Richard</div>
+                <div class="chatMessagesReceived">Anything good</div>
+                <div class="chatMessagesSentFrom">Andrew</div>
+                <div class="chatMessagesSent">Everything's good</div>
+            </div>
+        </div>
+<!--end new 02/20-->        
+            <div id="chatMessagesSubmitContainer">
+                <form action="#">
+                    <input type="text" class="chatMessageInputText">
+                    <input type="submit" class="chatMessageInputSend" value="Send">
+                </form>
+            </div>
+
+        </div>    
+      
+            <div id="newRightSideContentContainer">
+<!--
+                <div id="newRightSideTimer">
+                    <p class="newRightSideTimerLabels">Bar</p>
+                    <p class="newRightSideTimerNumbers">1</p>
+                    <p class="newRightSideTimerLabels">Beat</p>
+                    <p class="newRightSideTimerNumbers">25</p>
+                    <p class="newRightSideTimerLabels">Time</p>
+                    <p class="newRightSideTimerNumbers">00:01:04:69</p>
+                </div>
+                <div>
+                <div id="newRightSideMasterVolumeLabel">Master<br>Volume</div>
+                <div id="newRightSideMasterVolumeContainer">
+                    <div id="newRightSideMasterVolume">
+                        <input type="range" min="1" max="10" value="2" id="newRightSideVolumeSlider">
+                    </div>
+                </div>
+            </div>
+           <button class="openchatbtn" id="openchatbtn" onclick="openChat()">C<br>h<br>a<br>t</button>   -->           
+        </div>
+    </div>
+   
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
